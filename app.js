@@ -1,16 +1,18 @@
-const T=[["1914","Pascal Difazio opens a bicycle shop at 25 Catherine Street, Frome. His son John (Jack) is born the same year."],
-["1920s","The shop sells BSA, Triumph and Brough motorcycles, delivered by train. Jack recalled visits from George Brough and T. E. Lawrence."],
+const T=[["1914","Pascal Difazio is selling bicycles from a cottage on Catherine Street, Frome. Jack is born on 25 August."],
+["1919","On 18 October Pascal buys No. 25 Catherine Street, with no record of a mortgage."],
+["1920s","Brough Superior agent by 1923, and the first BSA dealer in Somerset. Jack recalled meeting T. E. Lawrence."],
 ["c.1930","Jack starts grass-track racing at 16 on a BSA Blue Star, later moving to a Rudge Ulster."],
 ["1947","Jack leaves Pinks in London to take over the business as Pascal retires."],
 ["1956","First hub-centre machine: a BSA Gold Flash sidecar outfit with a Reliant-type swinging arm and a Ford Prefect brake drum."],
-["1957–59","Richard joins the shop, passengers for Jack on the grass, then starts road racing in 1959."],
+["1957–59","Richard joins the shop and passengers for Jack on the grass. His first road race is at Silverstone in April 1959."],
 ["1962–65","The shop becomes agents for Honda (1962), Suzuki (1963) and Yamaha (1965)."],
 ["1968","Patent GB1274441 is filed. Richard races the first solo hub-steerer, an AJS 7R special, at Thruxton."],
 ["1969","A hub-steered Triumph Trident road bike appears on Frome’s streets."],
 ["1973–76","Highlights: a Suzuki GT550 for Bike, a Norton Commando, Mead & Tomkinson’s Laverda racer, the Ducati 750 and three Hurricanes."],
 ["1980s","Production winds down by 1983 and the shop turns to BMW twins."],
 ["Early 1990s","The workshops face redevelopment, and John Ransome saves the moulds and spares."],
-["2007/8","Richard builds the last of his five BMW R65 Difazio Specials."],
+["c.2007","Aged 93, Jack helps make a new batch of hubs. Richard builds the last of his five R65 Difazio Specials."],
+["c.2008","Richard closes the shop at No. 25 after nearly 90 years there."],
 ["2012","A Hurricane-engined Difazio wins the Kay Engineering Trophy at Stafford. Jack Difazio dies the same year."]];
 const nav=document.querySelector('.tl-nav'),card=document.querySelector('.tl-card');
 T.forEach(([y],i)=>{const b=document.createElement('button');b.type='button';b.textContent=y;b.setAttribute('role','tab');b.onclick=()=>show(i,true);nav.append(b)});

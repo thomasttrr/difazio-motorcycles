@@ -141,3 +141,25 @@ Every fact below comes with its source. Items marked ⚠ are single-source or co
 - Hagerty records Bonhams lot 386 at US$16,407 (20 Oct 2019). classic-motorbikes.net dates the bike to 1974; Bonhams says 1975. https://www.hagerty.com/valuation-tools/past-sales/1975-difazio_ducati-750/HSDUC129/379f47ad-602e-4bdb-8768-14d3d0f87fa3
 - EP0432107B1 (1990) cites "GB-A-1 274 441 (DIFAZIO)". https://patents.google.com/patent/EP0432107B1/en
 - Skipped as uncertain: the racing sidecar outfit seen in photos, and a "Tim built a Suzuki 500 in 1976" claim (AI summary error).
+
+## Early history, machines and later years (research pass, 14 Oct 2026; full notes in /workspace/research-early.md, research-machines.md, research-later.md)
+- [FSYB] Richard Difazio, "Difazios of Catherine Street", Frome Society Year Book 16 (2013), pp.82–86: https://fromesociety.wordpress.com/wp-content/uploads/2023/07/yearbook16.pdf
+  - Pascal was born 21 April 1889. His home town is given as "Michael St Angelo, near Casino in southern Italy" (the family's spelling).
+  - He "walked from Italy to the near coast of France ... disembarking at Falmouth, only owning the clothes he was wearing."
+  - He sold bikes from a "one up/one down" cottage in Catherine Street. He bought No. 25 "on the 18 October 1919 ... no record of a mortgage or loan."
+  - Jack was "born 25 August 1914".
+  - Pascal stored bicycles at "two pence a time". "By 1923 he was an agent for most leading makes, including Brough Superior."
+  - Pascal was "often disappearing to the Ship Inn at Porlock for a couple of days, leaving my father to run the business unpaid!"
+  - Jack on Lawrence: "as I was introduced to the slight, quiet figure of T.E. Lawrence, I instinctively knew that this man was different..."
+  - The business closed in 2008. Historypin (Frome Society) gives "1919 lasting until 2008": https://historypin.org/pins/99406/
+- [CBH-DB32] Classic Bike Hub, BSA DB32 (24 Aug 2020): https://www.classicbikehub.uk/features/article/bsa-clubman-db32-best-gold-star/
+  - Difazio's was the first of Small Heath's (BSA) dealerships in Somerset.
+  - Sgt Joseph Joy left with "his Volvo filled to the brim with Goldie spares".
+  - Richard's debut was at Silverstone, April 1959. He rode the Goldie 100 miles to get there, and Jack "deliberately over-jetted the carburettor to make it slower".
+- Royce Creasey: "the infamous Difazio speedo drive 'solution' ... driven by a rubber band off the hub. This is why the Banana almost never had a speedo": https://bikeweb.com/node/3763.html
+- ADVrider, "Difazio hub centre BMW" (read via search snippets; the page blocks direct fetch): https://www.advrider.com/f/threads/difazio-hub-centre-bmw.368049/
+  - An R75/5 outfit has had "the same owner since the 70s. He only has the use of one arm".
+  - "oldmalc" turned hubs in the mid-70s, and around 2007 made new hubs with Jack (93) and John Ransome.
+- Peter Holden bought the Laverda 3C from Andy Lloyd "about 20 years back" and also owns a 1926 Ner-a-Car: https://laverdaforum.com/threads/hub-centre-steering-who%E2%80%99s-ridden-a-one.103377/
+- Richard (2011), on the R65 specials: "over the last twenty five or so years, I have made several short stroke special R65's, mostly 94m/m bore 850cc ... 88m/m bore which makes a very useful short stroke 750cc": https://boxerworks.com/forum/viewtopic.php?t=1821
+- Not used: the 1958 vs 1956 sidecar date (the site keeps 1956), and OddBike's "Tesi based on Difazio hub" (single secondary source).
