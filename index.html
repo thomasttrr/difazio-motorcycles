@@ -82,7 +82,16 @@ figcaption{font-size:.88rem;color:var(--muted);margin-top:10px}
 .lightbox img{max-height:calc(100dvh - 160px)}.sfgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:18px}@media(max-width:1100px){.sfgrid{grid-template-columns:repeat(3,1fr)}}@media(min-width:701px) and (max-width:900px){.sfgrid{grid-template-columns:repeat(2,1fr)}}.sf{background:var(--card);border-radius:var(--r);padding:22px;border:1px solid rgba(255,255,255,.05);position:relative;overflow:hidden}.sf::after{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--accent),transparent)}.sf svg{width:30px;height:30px;fill:none;stroke:var(--accent);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}.sf h3{font-size:1.15rem}.sf p{color:var(--muted);font-size:.93rem}@media(max-width:700px){.sfgrid{display:flex}.sfgrid.carousel .sf{flex:0 0 78%;scroll-snap-align:start}}.team{display:grid;grid-template-columns:minmax(220px,1fr) 2fr;gap:28px;align-items:start;margin:8px 0 24px}.team .ph{aspect-ratio:4/5}.tim blockquote{margin-top:18px}.tim p+p{margin-top:12px}.words{border-left-style:dashed}@media(max-width:700px){.team{grid-template-columns:1fr}.team .ph{aspect-ratio:16/10}}.hx{background:var(--card);border-radius:var(--r);padding:clamp(14px,3vw,26px);margin:32px 0}.hx-ctrl{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;margin-bottom:10px}
 .seg{display:inline-flex;background:var(--bg);border-radius:980px;padding:4px}.seg button,.brake{min-height:44px;border:0;border-radius:980px;padding:0 16px;font:600 15px Inter,sans-serif;cursor:pointer;color:var(--text);background:transparent}
 .seg button[aria-pressed=true]{background:var(--accent);color:#1b1b1b}.brake{background:#b8382a;color:#fff}.brake[aria-pressed=true]{background:#8f2a1f}
-.hx svg{width:100%;height:auto;display:block;overflow:visible}.hx .ground{stroke:var(--line);stroke-width:2}.hx .wheel circle{fill:none;stroke:var(--text);stroke-width:6}.hx .wheel .axle{fill:var(--text);stroke:none}.hx .wheel .disc{stroke:#9a968f;stroke-width:3}
+.hx-view{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#2b2d31;display:flex;align-items:center;justify-content:center}
+.hx svg{width:100%;height:100%;display:block;padding:4%}
+.hx-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;opacity:0;transition:opacity .5s;touch-action:pan-y;outline:none}
+.hx3d .hx-canvas{opacity:1}.hx3d svg{visibility:hidden}
+.hx-hint{position:absolute;left:12px;bottom:12px;padding:6px 12px;border-radius:999px;background:rgba(20,21,24,.72);color:#f1ece4;font-size:.8rem;pointer-events:none;opacity:0;transition:opacity .3s}
+.hx3d .hx-hint{opacity:1}.hx-view.unlocked .hx-hint{opacity:.75}
+.hx-done{position:absolute;right:10px;top:10px;min-width:64px;min-height:44px;border-radius:999px;border:1px solid var(--accent);background:rgba(20,21,24,.82);color:#f1ece4;font:600 .9rem Inter,sans-serif}
+.hx-done[hidden]{display:none}
+.hx-note{color:var(--muted);font-size:.78rem;margin:0}
+@media (max-width:699px){.hx-view{aspect-ratio:4/3}}.hx .ground{stroke:var(--line);stroke-width:2}.hx .wheel circle{fill:none;stroke:var(--text);stroke-width:6}.hx .wheel .axle{fill:var(--text);stroke:none}.hx .wheel .disc{stroke:#9a968f;stroke-width:3}
 .hx .frame{fill:none;stroke:#9a968f;stroke-width:5;stroke-linejoin:round}.hx .tank{fill:var(--accent)}.hx .seat{fill:#1f2023}.hx .stanchion{stroke:#d9d4cc;stroke-width:9;stroke-linecap:round}.hx .slider{stroke:#7d7a74;stroke-width:13;stroke-linecap:round}
 .hx .arm{stroke:#d9d4cc;stroke-width:9;stroke-linecap:round}.hx .link{stroke:#9a968f;stroke-width:3;stroke-dasharray:6 5}.hx .joint{fill:#d9d4cc}.hx .bars{stroke:var(--text);stroke-width:5;stroke-linecap:round}
 .hx .pivot{fill:var(--red);stroke:#fff;stroke-width:2}.hx .lbl{fill:var(--accent);font:600 21px Inter,sans-serif}
@@ -113,7 +122,7 @@ figcaption{font-size:.88rem;color:var(--muted);margin-top:10px}
 <div class="hx" data-mode="fork" data-brake="0">
 <div class="hx-ctrl"><div class="seg" role="group" aria-label="Front end type"><button type="button" data-set="fork" aria-pressed="true">Telescopic forks</button><button type="button" data-set="hub" aria-pressed="false">Hub-centre</button></div>
 <button type="button" class="brake" aria-pressed="false">Brake hard</button></div>
-<svg viewBox="0 -6 600 296" role="img" aria-labelledby="hx-t"><title id="hx-t">Side view of a motorcycle front end. Use the buttons to switch between forks and hub-centre steering and to apply the brakes.</title>
+<div class="hx-view"><svg viewBox="0 -6 600 296" role="img" aria-labelledby="hx-t"><title id="hx-t">Side view of a motorcycle front end. Use the buttons to switch between forks and hub-centre steering and to apply the brakes.</title>
 <line x1="20" y1="262" x2="580" y2="262" class="ground"/>
 <g class="wheel"><circle cx="120" cy="210" r="50"/><circle cx="120" cy="210" r="6" class="axle"/></g>
 <g class="wheel"><circle cx="470" cy="210" r="50"/><circle cx="470" cy="210" r="6" class="axle"/><circle cx="470" cy="210" r="22" class="disc"/></g>
@@ -128,8 +137,8 @@ figcaption{font-size:.88rem;color:var(--muted);margin-top:10px}
 <path class="force fork-only" d="M470 255 L470 210 L452 166 L420 88"/><path class="force hub-only" d="M470 255 L470 210 L330 205"/>
 <text x="300" y="30" class="lbl fork-only" text-anchor="middle">Steering pivot: headstock, high above the wheel</text>
 <text x="300" y="30" class="lbl hub-only" text-anchor="middle">Steering pivot: king-pin inside the hub</text>
-</svg>
-<p class="hx-cap" aria-live="polite"></p></div>
+</svg></div>
+<p class="hx-cap" aria-live="polite"></p><p class="hx-note">Pitch angles are illustrative, not measured.</p></div>
 <div class="cols">
 <blockquote data-r>“Up to 80mph the handlebars were almost superfluous… One could almost indulge in secondary pastimes like glancing at a map or eating a sandwich.”<cite>University of Manchester, 500-mile test</cite></blockquote>
 <blockquote data-r>“The Difazio is the best overall machine currently available for high speed touring.”<cite>Same report, conclusion</cite></blockquote>
@@ -212,8 +221,10 @@ figcaption{font-size:.88rem;color:var(--muted);margin-top:10px}
 <dialog class="lightbox" aria-label="Image viewer"><button type="button" class="close" aria-label="Close">×</button><button type="button" class="prev" aria-label="Previous photo">‹</button><button type="button" class="next" aria-label="Next photo">›</button><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><p></p></dialog>
 <script>// hub explainer
 (()=>{const x=document.querySelector('.hx');if(!x)return;const cap=x.querySelector('.hx-cap'),br=x.querySelector('.brake');
-const C={fork:['Telescopic forks: the wheel steers from the headstock, high above it. Braking force runs up the sliding tubes.','Braking: the forks compress and the front end dives, which changes the steering geometry mid-corner.'],
-hub:['Hub-centre: the wheel pivots on a king-pin inside its own hub. A swinging arm handles suspension and braking.','Braking: the force goes back along the swinging arm into the frame, so the bike stays nearly level. Manchester’s testers found “up to 80mph the handlebars were almost superfluous”.']};
+const C={fork:['Telescopic forks. Drag to rotate. Tap “Brake hard” to see the fork dive.','Braking force runs up the fork tubes and compresses them. The front dives about 4.5°.'],
+hub:['Hub-centre steering. The wheel steers on a king-pin inside the hub itself.','Braking force goes through the swinging arm, not the steering. The front barely dips, about 0.4°.']};
 function upd(){cap.textContent=C[x.dataset.mode][+x.dataset.brake]}
 x.addEventListener('click',e=>{const s=e.target.closest('[data-set]');if(s){x.dataset.mode=s.dataset.set;x.querySelectorAll('[data-set]').forEach(o=>o.setAttribute('aria-pressed',o===s));upd();return}if(e.target.closest('.brake'))toggle()});
-function toggle(){const on=x.dataset.brake!='1';x.dataset.brake=on?'1':'0';br.setAttribute('aria-pressed',on);br.textContent=on?'Release brake':'Brake hard';upd()}upd()})();</script><script src="app.js?v=11" defer></script></body></html>
+function toggle(){const on=x.dataset.brake!='1';x.dataset.brake=on?'1':'0';br.setAttribute('aria-pressed',on);br.textContent=on?'Release brake':'Brake hard';upd()}upd()})();</script><script type="importmap">{"imports":{"three":"/vendor/three/three.module.min.js","three/addons/":"/vendor/three/addons/"}}</script>
+<script type="module" src="hub3d.js?v=1"></script>
+<script src="app.js?v=11" defer></script></body></html>
