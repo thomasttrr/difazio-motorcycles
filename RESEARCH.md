@@ -116,3 +116,19 @@ Every fact below comes with its source. Items marked ⚠ are single-source or co
   - The later Australian owner of the BMW called it "the best handling boxer twin I ever owned".
   - A Difazio-Suzuki 350 was built for a customer using a 325cc racing engine.
 - ⚠ Memory-only, kept but labelled on the site: the Brough / T. E. Lawrence visit (Jack's recollection, [CM]).
+
+## Tim Tucker (team member; the user's dad)
+- He was part of Jack's usual team, with Pat Hooper and Trevor Burridge. [CM] https://www.cybermotorcycle.com/archives/difazio-history.htm
+- The team (Jack, Trevor Burridge, Tim Tucker, Pat Hooper) made the frames, turned the hubs, laid the fibreglass and did the assembly, "very much a cottage industry". [CM/DW]
+- 2008 email to cybermotorcycle, signed "Tim": he built BMW UK reg OXB 75P and its sister Suzuki 500 for a couple living in Adelaide in 1976, who took both bikes to Australia. He asked for photos "to add to the records". https://cybermotorcycle.com/marques/british/difazio.htm
+- 23 Jan 2014 email from "Tim Tucker": "The Difazio Hub Steered BMW motorcycle which I built back in 1975" was bought by Robert Jameison and taken to Australia. "It's the only bike of ours in Australia so it is important to us to locate it." He put an alert out to bike clubs. [same URL]
+- Same email:
+  - He spoke to an owner of "a similar bike that I built in the USA".
+  - He located "a Difazio Suzuki 750 which I built in 1974", shipped to Canada and now in "Birmingham AB USA" (as written).
+  - "We also shipped back a Suzuki 500 Falcon from the USA for restoration."
+  - "We now have quite a collection back in the UK most of which are still ridden regularly."
+  - "I am the only one around from the original Team that built these bikes but have great enjoyment helping towards restoration and attending shows."
+  - Signed "Tim, Difazio Motorcycle Interest Group UK". [same URL]
+- ⚠ Discrepancy: the 2008 email dates the Australia pair to 1976, the 2014 email says the BMW was built in 1975. The site uses Tim's 2014 wording.
+- ⚠ The Access Norton Commando owner who signs "Tim" is a different person: an ex-Army owner in Andover whose father bought the bike in 1977.
+- Gaps: no dates for Tim's employment, no photos, no press quotes, and no anecdotes with Jack, Richard, Pat or Trevor found online. Frome Times and Classic Bike Hub don't name him.
