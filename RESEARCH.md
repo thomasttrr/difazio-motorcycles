@@ -98,3 +98,21 @@ Every fact below comes with its source. Items marked ⚠ are single-source or co
 - British Newspaper Archive: snippets need a subscription, so not checked.
 - No Somerset HER / local-history entries found online. No H&H lots found. No YouTube or podcast with a verifiable description found.
 - No exact date for when the shop closed.
+
+## Surprising facts (round 3)
+- [WPH] Wikipedia, Hub-center steering: https://en.wikipedia.org/wiki/Hub-center_steering
+  - The concept goes back to a 1910 James and the 1920 Ner-a-Car. It "enjoyed an aftermarket vogue in the 1970s through the work of Jack Difazio".
+  - Tomkinson's efforts "encouraged the Elf racing team" in the 1980s.
+  - Michael Tryphonos built a prototype "based on the Difazio system" that reached 11th in the Senior TT.
+  - The Yamaha GTS1000 was based on James Parker's RADD design.
+- [ALTO] Alto Racing, "Hub centre - a brief history": http://www.altoracing.co.uk/super-bike-project/the-bike/
+  - Royce Creasey "worked with Difazio for his own first project".
+  - The Bimota Tesi 1D came from the Elf-era line, not Difazio's. Vyrus (Ascanio Rodorigo, a former Bimota technician) built the Tesi 2D.
+- [FFW] FF Web (bikeweb.com): "Creasey-Difazio CX500 Flying Banana (1981)": https://www.bikeweb.com/image/tid/36 · Royce Creasey's own comment: https://www.bikeweb.com/node/3750.html
+  - At the 1981 Isle of Man TT, Royce put in "a 33 minute open-roads lap" and later crashed at Creg ny Baa (he wrote "Creg na Baa").
+- [CMM] cybermotorcycle, Difazio marque page: https://cybermotorcycle.com/marques/british/difazio.htm
+  - *The Motor Cycle*, 26 June 1968: the AJS 7R special "made quite a stir" at Thruxton.
+  - Tim Tucker (2014), describing himself as the last surviving member of the original team: bikes were built for the USA, a Suzuki 750 went to Canada (1974), and BMW OXB 75P plus a sister Suzuki 500 went to Australia in 1976. One owner's wife returned her Difazio Suzuki "as she couldn't cope with it".
+  - The later Australian owner of the BMW called it "the best handling boxer twin I ever owned".
+  - A Difazio-Suzuki 350 was built for a customer using a 325cc racing engine.
+- ⚠ Memory-only, kept but labelled on the site: the Brough / T. E. Lawrence visit (Jack's recollection, [CM]).
