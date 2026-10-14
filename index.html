@@ -209,4 +209,10 @@ figcaption{font-size:.88rem;color:var(--muted);margin-top:10px}
 <p>Draft site · photos marked “placeholder” await family images · full notes in RESEARCH.md.</p></section>
 <a href="#top" class="totop" aria-label="Back to top">↑</a></main>
 <dialog class="lightbox" aria-label="Image viewer"><button type="button" class="close" aria-label="Close">×</button><button type="button" class="prev" aria-label="Previous photo">‹</button><button type="button" class="next" aria-label="Next photo">›</button><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><p></p></dialog>
-<script src="app.js" defer></script></body></html>
+<script>// hub explainer
+(()=>{const x=document.querySelector('.hx');if(!x)return;const cap=x.querySelector('.hx-cap'),br=x.querySelector('.brake');
+const C={fork:['Telescopic forks: the wheel steers from the headstock, high above it. Braking force runs up the sliding tubes.','Braking: the forks compress and the front end dives, which changes the steering geometry mid-corner.'],
+hub:['Hub-centre: the wheel pivots on a king-pin inside its own hub. A swinging arm handles suspension and braking.','Braking: the force goes back along the swinging arm into the frame, so the bike stays nearly level. Manchester’s testers found “up to 80mph the handlebars were almost superfluous”.']};
+function upd(){cap.textContent=C[x.dataset.mode][+x.dataset.brake]}
+x.addEventListener('click',e=>{const s=e.target.closest('[data-set]');if(s){x.dataset.mode=s.dataset.set;x.querySelectorAll('[data-set]').forEach(o=>o.setAttribute('aria-pressed',o===s));upd();return}if(e.target.closest('.brake'))toggle()});
+function toggle(){const on=x.dataset.brake!='1';x.dataset.brake=on?'1':'0';br.setAttribute('aria-pressed',on);br.textContent=on?'Release brake':'Brake hard';upd()}upd()})();</script><script src="app.js?v=10" defer></script></body></html>

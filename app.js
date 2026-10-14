@@ -41,10 +41,3 @@ swipe(card,()=>show((cur+1)%T.length,false),()=>show((cur-1+T.length)%T.length,f
 if(matchMedia('(prefers-reduced-motion: no-preference)').matches&&'IntersectionObserver'in window){const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('[data-r]').forEach(el=>ro.observe(el))}else document.querySelectorAll('[data-r]').forEach(el=>el.classList.add('in'));
 // offline
 if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
-// hub explainer
-(()=>{const x=document.querySelector('.hx');if(!x)return;const cap=x.querySelector('.hx-cap'),br=x.querySelector('.brake');
-const C={fork:['Telescopic forks: the wheel steers from the headstock, high above it. Braking force runs up the sliding tubes.','Braking: the forks compress and the front end dives, which changes the steering geometry mid-corner.'],
-hub:['Hub-centre: the wheel pivots on a king-pin inside its own hub. A swinging arm handles suspension and braking.','Braking: the force goes back along the swinging arm into the frame, so the bike stays nearly level. Manchester’s testers found “up to 80mph the handlebars were almost superfluous”.']};
-function upd(){cap.textContent=C[x.dataset.mode][+x.dataset.brake]}
-x.querySelectorAll('[data-set]').forEach(b=>b.onclick=()=>{x.dataset.mode=b.dataset.set;x.querySelectorAll('[data-set]').forEach(o=>o.setAttribute('aria-pressed',o===b));upd()});
-br.onclick=()=>{const on=x.dataset.brake!='1';x.dataset.brake=on?'1':'0';br.setAttribute('aria-pressed',on);br.textContent=on?'Release brake':'Brake hard';upd()};upd()})();
