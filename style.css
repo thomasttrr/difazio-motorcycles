@@ -38,3 +38,5 @@ figcaption{font-size:14px;color:var(--muted);margin-top:10px}
 .totop{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border-radius:50%;background:var(--accent);color:#1b1b1b;display:grid;place-items:center;text-decoration:none;font-weight:700;font-size:20px;opacity:0;pointer-events:none;transition:opacity .25s;box-shadow:0 6px 20px rgba(0,0,0,.35)}.totop.show{opacity:1;pointer-events:auto}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 .wrap .lead{margin-left:0}
+.card-img{width:calc(100% + 48px);margin:-24px -24px 16px;aspect-ratio:16/10;object-fit:cover;border-radius:18px 18px 0 0;display:block;height:auto}
+.credit,figcaption a{font-size:13px}.credit{margin-top:10px;color:var(--muted)}figcaption a,.credit a{color:var(--accent)}
