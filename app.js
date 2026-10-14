@@ -7,13 +7,13 @@ const T=[["1914","Pascal Difazio opens a bicycle shop at 25 Catherine Street, Fr
 ["1962–65","The shop becomes agents for Honda (1962), Suzuki (1963) and Yamaha (1965)."],
 ["1968","Patent GB1274441 is filed. Richard races the first solo hub-steerer, an AJS 7R special, at Thruxton."],
 ["1969","A hub-steered Triumph Trident road bike appears on Frome’s streets."],
-["1973–76","Busiest years: a Suzuki GT550 for Bike, a Norton Commando, Mead & Tomkinson’s Laverda racer, the Ducati 750 and three Hurricanes."],
+["1973–76","Highlights: a Suzuki GT550 for Bike, a Norton Commando, Mead & Tomkinson’s Laverda racer, the Ducati 750 and three Hurricanes."],
 ["1980s","Production winds down by 1983 and the shop turns to BMW twins."],
 ["Early 1990s","The workshops face redevelopment, and John Ransome saves the moulds and spares."],
 ["2007/8","Richard builds the last of his five BMW R65 Difazio Specials."],
 ["2012","A Hurricane-engined Difazio wins the Kay Engineering Trophy at Stafford. Jack Difazio dies the same year."]];
 const nav=document.querySelector('.tl-nav'),card=document.querySelector('.tl-card');
-T.forEach(([y],i)=>{const b=document.createElement('button');b.textContent=y;b.setAttribute('role','tab');b.onclick=()=>show(i,true);nav.append(b)});
+T.forEach(([y],i)=>{const b=document.createElement('button');b.type='button';b.textContent=y;b.setAttribute('role','tab');b.onclick=()=>show(i,true);nav.append(b)});
 function show(i,focus){[...nav.children].forEach((b,j)=>{const on=i==j;b.classList.toggle('on',on);b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;if(on){if(focus)b.focus({preventScroll:true});nav.scrollTo({left:b.offsetLeft-nav.clientWidth/2+b.clientWidth/2,behavior:'smooth'})}});card.innerHTML=`<b>${T[i][0]}</b><p>${T[i][1]}</p>`;cur=i}
 let cur=0;show(0);
 nav.addEventListener('keydown',e=>{const k={ArrowRight:1,ArrowDown:1,ArrowLeft:-1,ArrowUp:-1}[e.key];if(k){e.preventDefault();show((cur+k+T.length)%T.length,true)}else if(e.key=='Home'){show(0,true)}else if(e.key=='End'){show(T.length-1,true)}});
@@ -40,4 +40,11 @@ swipe(card,()=>show((cur+1)%T.length,false),()=>show((cur-1+T.length)%T.length,f
 // scroll reveal
 if(matchMedia('(prefers-reduced-motion: no-preference)').matches&&'IntersectionObserver'in window){const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('[data-r]').forEach(el=>ro.observe(el))}else document.querySelectorAll('[data-r]').forEach(el=>el.classList.add('in'));
 // offline
-if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js'));
+if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+// hub explainer
+(()=>{const x=document.querySelector('.hx');if(!x)return;const cap=x.querySelector('.hx-cap'),br=x.querySelector('.brake');
+const C={fork:['Telescopic forks: the wheel steers from the headstock, high above it. Braking force runs up the sliding tubes.','Braking: the forks compress and the front end dives, which changes the steering geometry mid-corner.'],
+hub:['Hub-centre: the wheel pivots on a king-pin inside its own hub. A swinging arm handles suspension and braking.','Braking: the force goes back along the swinging arm into the frame, so the bike stays nearly level. Manchester’s testers found “up to 80mph the handlebars were almost superfluous”.']};
+function upd(){cap.textContent=C[x.dataset.mode][+x.dataset.brake]}
+x.querySelectorAll('[data-set]').forEach(b=>b.onclick=()=>{x.dataset.mode=b.dataset.set;x.querySelectorAll('[data-set]').forEach(o=>o.setAttribute('aria-pressed',o===b));upd()});
+br.onclick=()=>{const on=x.dataset.brake!='1';x.dataset.brake=on?'1':'0';br.setAttribute('aria-pressed',on);br.textContent=on?'Release brake':'Brake hard';upd()};upd()})();

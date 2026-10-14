@@ -132,3 +132,12 @@ Every fact below comes with its source. Items marked ⚠ are single-source or co
 - ⚠ Discrepancy: the 2008 email dates the Australia pair to 1976, the 2014 email says the BMW was built in 1975. The site uses Tim's 2014 wording.
 - ⚠ The Access Norton Commando owner who signs "Tim" is a different person: an ex-Army owner in Andover whose father bought the bike in 1977.
 - Gaps: no dates for Tim's employment, no photos, no press quotes, and no anecdotes with Jack, Richard, Pat or Trevor found online. Frome Times and Classic Bike Hub don't name him.
+
+## Archive findings (separate research pass, 14 Oct 2026; full notes in /workspace/difazio-archive-findings.md)
+- Andy Lloyd's Difazio Laverda 3C was "the only road going Laverda triple". He bought it through Steve Winterton of Calere around 1986 and prepared it for "the 90th birthday of Mr Jack Difazio", the weekend before 7 Feb 2004. https://laverdaforum.com/threads/difazio-laverda.44945/ (re-checked)
+- There were "many hub-steerer's at Jack's Frome shop that day". An owner says it "soak's up bump's better than any fork's". Andy Westlake sent Difazio photos to eurospares.com. https://laverdaforum.com/threads/difazio-photos.40577/
+- An unnamed "ex employee of Jack Difazio" said the hub seal "was always incontinent"; the hub was topped up through a 1/4" screw hole between the spokes (2016, Difazio BMW R75/6 restorer). https://www.vincentownersclub.co.uk/threads/difazio-lubrication.8030/ (timed out when I tried to re-check it)
+- Bernard Mont (Belgium) spent seven years on a "TT3 Difazio" Ducati 900SS, an "imagined collaboration between the engineers Fabio Taglioni and Jack Difazio". https://www.bikeexif.com/custom-ducati-900ss (2 Nov 2012)
+- Hagerty records Bonhams lot 386 at US$16,407 (20 Oct 2019). classic-motorbikes.net dates the bike to 1974; Bonhams says 1975. https://www.hagerty.com/valuation-tools/past-sales/1975-difazio_ducati-750/HSDUC129/379f47ad-602e-4bdb-8768-14d3d0f87fa3
+- EP0432107B1 (1990) cites "GB-A-1 274 441 (DIFAZIO)". https://patents.google.com/patent/EP0432107B1/en
+- Skipped as uncertain: the racing sidecar outfit seen in photos, and a "Tim built a Suzuki 500 in 1976" claim (AI summary error).
