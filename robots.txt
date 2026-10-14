@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://difazio-motorcycles.vercel.app/sitemap.xml

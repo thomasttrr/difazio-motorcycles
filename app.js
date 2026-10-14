@@ -14,7 +14,7 @@ const T=[["1914","Pascal Difazio opens a bicycle shop at 25 Catherine Street, Fr
 ["2012","A Hurricane-engined Difazio wins the Kay Engineering Trophy at Stafford. Jack Difazio dies the same year."]];
 const nav=document.querySelector('.tl-nav'),card=document.querySelector('.tl-card');
 T.forEach(([y],i)=>{const b=document.createElement('button');b.textContent=y;b.setAttribute('role','tab');b.onclick=()=>show(i,true);nav.append(b)});
-function show(i,focus){[...nav.children].forEach((b,j)=>{const on=i==j;b.classList.toggle('on',on);b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;if(on&&focus){b.focus();b.scrollIntoView({block:'nearest',inline:'center'})}});card.innerHTML=`<b>${T[i][0]}</b><p>${T[i][1]}</p>`;cur=i}
+function show(i,focus){[...nav.children].forEach((b,j)=>{const on=i==j;b.classList.toggle('on',on);b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;if(on){if(focus)b.focus({preventScroll:true});nav.scrollTo({left:b.offsetLeft-nav.clientWidth/2+b.clientWidth/2,behavior:'smooth'})}});card.innerHTML=`<b>${T[i][0]}</b><p>${T[i][1]}</p>`;cur=i}
 let cur=0;show(0);
 nav.addEventListener('keydown',e=>{const k={ArrowRight:1,ArrowDown:1,ArrowLeft:-1,ArrowUp:-1}[e.key];if(k){e.preventDefault();show((cur+k+T.length)%T.length,true)}else if(e.key=='Home'){show(0,true)}else if(e.key=='End'){show(T.length-1,true)}});
 // menu
@@ -22,12 +22,22 @@ const burger=document.querySelector('.burger'),menu=document.getElementById('men
 burger.onclick=()=>{const o=burger.getAttribute('aria-expanded')!='true';burger.setAttribute('aria-expanded',o);menu.classList.toggle('open',o)};
 menu.addEventListener('click',e=>{if(e.target.tagName=='A'){burger.setAttribute('aria-expanded','false');menu.classList.remove('open')}});
 // active section
-const links=[...menu.querySelectorAll('a')];
+const links=[...document.querySelectorAll('.menu a,.bnav a')];
 const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.hash=='#'+en.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
 links.forEach(a=>{const s=document.querySelector(a.hash);s&&io.observe(s)});
 // back to top
 const tt=document.querySelector('.totop');addEventListener('scroll',()=>tt.classList.toggle('show',scrollY>900),{passive:true});
-// lightbox
-const lb=document.querySelector('.lightbox');let opener;
-document.querySelectorAll('.lb').forEach(b=>b.onclick=()=>{opener=b;lb.querySelector('img').src=b.dataset.src;lb.querySelector('img').alt=b.querySelector('img').alt;lb.querySelector('p').innerHTML=b.dataset.cap;lb.showModal()});
-lb.querySelector('.close').onclick=()=>lb.close();lb.onclick=e=>{if(e.target==lb)lb.close()};lb.addEventListener('close',()=>opener&&opener.focus());
+// lightbox with prev/next, keys, swipe
+const lb=document.querySelector('.lightbox'),lbImg=lb.querySelector('img'),lbCap=lb.querySelector('p'),items=[...document.querySelectorAll('.lb')];let idx=0,opener;
+function lbShow(i){idx=(i+items.length)%items.length;const b=items[idx];lbImg.src=b.dataset.src;lbImg.alt=b.querySelector('img').alt;lbCap.innerHTML=b.dataset.cap}
+items.forEach((b,i)=>b.onclick=()=>{opener=b;lbShow(i);lb.showModal()});
+lb.querySelector('.close').onclick=()=>lb.close();lb.querySelector('.prev').onclick=()=>lbShow(idx-1);lb.querySelector('.next').onclick=()=>lbShow(idx+1);
+lb.onclick=e=>{if(e.target==lb)lb.close()};lb.addEventListener('close',()=>opener&&opener.focus());
+lb.addEventListener('keydown',e=>{if(e.key=='ArrowRight')lbShow(idx+1);if(e.key=='ArrowLeft')lbShow(idx-1)});
+function swipe(el,onL,onR){let x0=null,y0;el.addEventListener('touchstart',e=>{x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});el.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5)(dx<0?onL:onR)();x0=null},{passive:true})}
+swipe(lb,()=>lbShow(idx+1),()=>lbShow(idx-1));
+swipe(card,()=>show((cur+1)%T.length,false),()=>show((cur-1+T.length)%T.length,false));
+// scroll reveal
+if(matchMedia('(prefers-reduced-motion: no-preference)').matches&&'IntersectionObserver'in window){const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('[data-r]').forEach(el=>ro.observe(el))}else document.querySelectorAll('[data-r]').forEach(el=>el.classList.add('in'));
+// offline
+if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js'));
