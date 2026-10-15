@@ -1,0 +1,610 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-15T04:40:00-04:00",
+  "purpose": "Draft machine registry for daytime review. NOT wired into live site rendering.",
+  "live_site_note": "Live #models cards remain hand-written HTML. Do not switch to JSON render without CLS/lazy-srcset proof and Tom OK.",
+  "count_on_site_cards": 12,
+  "count_research_only": 6,
+  "machines_on_site": [
+    {
+      "id": "card-01",
+      "year_label": "1968",
+      "type_label": "Racer",
+      "name": "AJS 7R special",
+      "text": "The first solo hub-steerer, built entirely in-house around an ex-Hailwood AJS 7R engine. Richard raced it at Thruxton and Cadwell Park.",
+      "img": "img/richard-thruxton-1968.webp",
+      "img_srcset": "img/richard-thruxton-1968-w480.webp 480w, img/richard-thruxton-1968.webp 750w",
+      "alt": "Richard Difazio at Thruxton in 1968 on the AJS 7R-engined hub-centre special",
+      "credit": "Photo: Difazio family archive / The Classic MotorCycle, courtesy of Classic Bike Hub — with thanks.",
+      "credit_url": "https://www.classicbikehub.uk/blog/article/hub-centre-machines/",
+      "on_site": true,
+      "approx_year": 1968,
+      "kind": "racer",
+      "engine": "AJS 7R (ex-Hailwood)",
+      "builders": [
+        "Jack Difazio",
+        "Richard Difazio"
+      ],
+      "owners": [
+        {
+          "name": "Difazio family / Richard",
+          "notes": "Raced at Thruxton and Cadwell Park",
+          "confidence": "high"
+        }
+      ],
+      "reg": null,
+      "status": "historic",
+      "sources": [
+        "TCM/CBH hub-centre article",
+        "site card"
+      ],
+      "confidence": "high",
+      "notes": "First solo hub-steerer; built entirely in-house per TCM.",
+      "schema_version": 1
+    },
+    {
+      "id": "card-02",
+      "year_label": "1969",
+      "type_label": "Road",
+      "name": "Triumph Trident",
+      "text": "The first hub-steered road bike, seen on Frome’s streets in autumn 1969. Four Tridents were eventually converted.",
+      "img": null,
+      "img_srcset": null,
+      "alt": null,
+      "credit": null,
+      "credit_url": null,
+      "on_site": true,
+      "approx_year": 1969,
+      "kind": "road",
+      "engine": "Triumph Trident triple",
+      "builders": [
+        "Difazio"
+      ],
+      "owners": [],
+      "reg": null,
+      "status": "unknown",
+      "sources": [
+        "CM history",
+        "site card"
+      ],
+      "confidence": "medium",
+      "notes": "First hub-steered road bike; four Tridents eventually converted (CM).",
+      "schema_version": 1
+    },
+    {
+      "id": "card-03",
+      "year_label": "c.1970",
+      "type_label": "Road",
+      "name": "Suzuki 500 “EYB 999J”",
+      "text": "Road-tested by several journalists, then sold to a customer in the USA.",
+      "img": null,
+      "img_srcset": null,
+      "alt": null,
+      "credit": null,
+      "credit_url": null,
+      "on_site": true,
+      "approx_year": 1970,
+      "kind": "road",
+      "engine": "Suzuki 500",
+      "builders": [
+        "Difazio"
+      ],
+      "owners": [
+        {
+          "name": "USA customer (unnamed)",
+          "notes": "Sold after press tests",
+          "confidence": "medium"
+        }
+      ],
+      "reg": "EYB 999J",
+      "status": "unknown",
+      "sources": [
+        "CM",
+        "site card"
+      ],
+      "confidence": "medium",
+      "notes": "One of the few public registrations known.",
+      "schema_version": 1
+    },
+    {
+      "id": "card-04",
+      "year_label": "1971",
+      "type_label": "Kevin Charles",
+      "name": "BSA Rocket 3",
+      "text": "The only Rocket 3 hub-steerer. Kevin sold it in 1977 as a deposit on his first house and bought it back 18 months later.",
+      "img": null,
+      "img_srcset": null,
+      "alt": null,
+      "credit": null,
+      "credit_url": null,
+      "on_site": true,
+      "approx_year": 1971,
+      "kind": "road",
+      "engine": "BSA Rocket 3",
+      "builders": [
+        "Difazio"
+      ],
+      "owners": [
+        {
+          "name": "Kevin Charles",
+          "notes": "Owned since 1975; sold 1977 and bought back; only Rocket 3 hub-steerer",
+          "confidence": "high"
+        }
+      ],
+      "reg": null,
+      "status": "survivor",
+      "sources": [
+        "CM",
+        "site card"
+      ],
+      "confidence": "high",
+      "photo_status": "placeholder_on_site",
+      "schema_version": 1
+    },
+    {
+      "id": "card-05",
+      "year_label": "1973",
+      "type_label": "Roger Margetts",
+      "name": "Suzuki GT550",
+      "text": "Built from a written-off GT550K, first owned by an RAF fitter, and featured in Bike in 1974. It sold at auction in 2005 for £1,500, with 17,000 miles on it.",
+      "img": "img/suzuki-gt550-front.webp",
+      "img_srcset": "img/suzuki-gt550-front-w480.webp 480w, img/suzuki-gt550-front.webp 620w",
+      "alt": "A Suzuki GT550 with a Difazio hub-centre front end",
+      "credit": "Photo: BIKE ME!, courtesy of bikeme.tv — with thanks.",
+      "credit_url": "https://bikeme.tv/index.php/history-of-the-front-end-part-ii/",
+      "on_site": true,
+      "approx_year": 1973,
+      "kind": "road",
+      "engine": "Suzuki GT550K",
+      "builders": [
+        "Difazio"
+      ],
+      "owners": [
+        {
+          "name": "Roger Margetts (RAF fitter)",
+          "notes": "First owner",
+          "confidence": "high"
+        },
+        {
+          "name": "Andy Westlake",
+          "notes": "Bought at auction 2005 for £1,500 / 17k miles",
+          "confidence": "high"
+        }
+      ],
+      "reg": null,
+      "status": "survivor",
+      "sources": [
+        "CM",
+        "Bike 1974",
+        "bikeme.tv",
+        "site card"
+      ],
+      "confidence": "high",
+      "schema_version": 1
+    },
+    {
+      "id": "card-06",
+      "year_label": "1973–74",
+      "type_label": "Norton",
+      "name": "Norton Commando",
+      "text": "An Andover Norton press bike converted for Norton’s Mike Jackson. Its owner says the Norton board learned of the project afterwards.",
+      "img": "img/norton-commando-1975.webp",
+      "img_srcset": "img/norton-commando-1975-w480.webp 480w, img/norton-commando-1975-w960.webp 960w, img/norton-commando-1975.webp 1024w",
+      "alt": "The hub-steered Norton Commando around 1974–75, soon after conversion",
+      "credit": "Photo: Tim (forum member “difazio”), courtesy of Access Norton forum — with thanks.",
+      "credit_url": "https://www.accessnorton.com/NortonCommando/difazio-hub-steering-commando.5851/",
+      "on_site": true,
+      "approx_year": 1973,
+      "kind": "road",
+      "engine": "Norton Commando",
+      "builders": [
+        "Difazio (conversion for Mike Jackson / Andover Norton)"
+      ],
+      "owners": [
+        {
+          "name": "Andover Norton (press bike)",
+          "notes": "Reg. Nov 1973",
+          "confidence": "high"
+        },
+        {
+          "name": "Mike Jackson",
+          "notes": "Commissioned conversion; Pyrenees event mid-1970s",
+          "confidence": "medium"
+        },
+        {
+          "name": "Bill Little (Glos.)",
+          "notes": "Interim owner per forum",
+          "confidence": "medium"
+        },
+        {
+          "name": "Current owner (Andover; forum “difazio”)",
+          "notes": "Father bought 1977; last MOT Sep 2017, on SORN",
+          "confidence": "medium"
+        }
+      ],
+      "reg": "known to forum (not printed publicly)",
+      "status": "SORN (as of forum 2017+)",
+      "sources": [
+        "Access Norton threads",
+        "RESEARCH.md",
+        "research-machines.md"
+      ],
+      "confidence": "medium",
+      "notes": "⚠ Owner forum posts are primary for later ownership chain.",
+      "schema_version": 1
+    },
+    {
+      "id": "card-07",
+      "year_label": "1975",
+      "type_label": "Endurance",
+      "name": "Mead & Tomkinson “Nessie”",
+      "text": "Difazio supplied Mead & Tomkinson’s first two hub-centre chassis. Their Laverda 1000 racer, with adapted Difazio steering, finished 10th at the 1976 Barcelona 24 Hours.",
+      "img": "img/nessie-laverda-1.webp",
+      "img_srcset": "img/nessie-laverda-1-w480.webp 480w, img/nessie-laverda-1-w960.webp 960w, img/nessie-laverda-1.webp 1600w",
+      "alt": "The ex-Mead and Tomkinson 1976 Laverda 1000 endurance racer on its Difazio-derived hub-centre front end",
+      "credit": "Photo: Bonhams, courtesy of Bonhams lot 417 (2007) — with thanks.",
+      "credit_url": "https://cars.bonhams.com/auction/15321/lot/417/the-ex-mead-and-tomkinson1976-laverda-1000cc-nessie-endurance-racing-prototype-frame-no-1605-engine-no-1605/",
+      "on_site": true,
+      "approx_year": 1975,
+      "kind": "endurance_racer",
+      "engine": "Laverda 1000 3C (later Kawasaki)",
+      "builders": [
+        "Mead & Tomkinson",
+        "Difazio (hub chassis supply)"
+      ],
+      "owners": [
+        {
+          "name": "Mead & Tomkinson",
+          "notes": "Ex-works endurance; Bonhams lot 417 (2007)",
+          "confidence": "high"
+        }
+      ],
+      "reg": null,
+      "status": "historic / sold",
+      "sources": [
+        "Bonhams 417",
+        "MTW",
+        "Classic Bike Oct 2007",
+        "site card"
+      ],
+      "confidence": "high",
+      "notes": "⚠ “Nessie” name applied to Laverda and later Kawasaki machines.",
+      "schema_version": 1
+    },
+    {
+      "id": "card-08",
+      "year_label": "1975",
+      "type_label": "Complete bike",
+      "name": "Ducati 750GTE",
+      "text": "One of only two complete Difazio motorcycles, with a rare electric-start roundcase engine. It sold at Bonhams for £12,650 in 2019.",
+      "img": "img/ducati-750-1.webp",
+      "img_srcset": "img/ducati-750-1-w480.webp 480w, img/ducati-750-1-w960.webp 960w, img/ducati-750-1.webp 1334w",
+      "alt": "The 1975 Difazio Ducati 750GTE with hub-centre front end",
+      "credit": "Photo: Bonhams, courtesy of Bonhams lot 386 (2019) — with thanks.",
+      "credit_url": "https://cars.bonhams.com/auction/25384/lot/386/1975-difazio-ducati-750-frame-no-hsduc129-engine-no-755029/",
+      "on_site": true,
+      "approx_year": 1975,
+      "kind": "complete_bike",
+      "engine": "Ducati 750GTE roundcase electric-start",
+      "frame": "HS/DUC/129",
+      "builders": [
+        "Difazio"
+      ],
+      "owners": [
+        {
+          "name": "Private (sold Bonhams 2019)",
+          "notes": "£12,650 on 20 Oct 2019; renovated 1991; Bob Currey prize; 3rd WDW Misano",
+          "confidence": "high"
+        }
+      ],
+      "reg": null,
+      "status": "sold_2019",
+      "sources": [
+        "Bonhams lot 386",
+        "site card"
+      ],
+      "confidence": "high",
+      "notes": "⚠ Bonhams wording “only two complete Difazio motorcycles” is single-source; attribute if restated.",
+      "schema_version": 1
+    },
+    {
+      "id": "card-09",
+      "year_label": "1976",
+      "type_label": "Kevin Charles",
+      "name": "Triumph Hurricane",
+      "text": "One of three built that spring. It won the Kay Engineering Trophy at Stafford in 2012.",
+      "img": null,
+      "img_srcset": null,
+      "alt": null,
+      "credit": null,
+      "credit_url": null,
+      "on_site": true,
+      "approx_year": 1976,
+      "kind": "road",
+      "engine": "Triumph Hurricane",
+      "builders": [
+        "Difazio"
+      ],
+      "owners": [
+        {
+          "name": "Kevin Charles",
+          "notes": "One of three built spring 1976; Kay Engineering Trophy Stafford 2012",
+          "confidence": "high"
+        }
+      ],
+      "reg": null,
+      "status": "survivor",
+      "sources": [
+        "FT",
+        "site card"
+      ],
+      "confidence": "high",
+      "notes": "⚠ FT live dateline now shows March 6, 2024; “2012” trophy year still on site pending check.",
+      "schema_version": 1
+    },
+    {
+      "id": "card-10",
+      "year_label": "1985",
+      "type_label": "Dave Ayesthorpe",
+      "name": "Honda Gold Wing",
+      "text": "One of two hub-steered Gold Wings, with over 100,000 miles covered. A second hub went on after a crash in 1987.",
+      "img": null,
+      "img_srcset": null,
+      "alt": null,
+      "credit": null,
+      "credit_url": null,
+      "on_site": true,
+      "approx_year": 1985,
+      "kind": "touring",
+      "engine": "Honda Gold Wing Mk1",
+      "builders": [
+        "Difazio (hub conversion)"
+      ],
+      "owners": [
+        {
+          "name": "Dave Ayesthorpe",
+          "notes": "Bike bought 1977; hub 1985; second hub 1987 after crash; 100k+ miles; one of two hub Wings",
+          "confidence": "high"
+        }
+      ],
+      "reg": null,
+      "status": "survivor",
+      "sources": [
+        "CM",
+        "site card"
+      ],
+      "confidence": "high",
+      "schema_version": 1
+    },
+    {
+      "id": "card-11",
+      "year_label": "1970s",
+      "type_label": "John May",
+      "name": "BMW R90S",
+      "text": "It came with a huge Falcon touring fairing that took two people three hours to remove.",
+      "img": null,
+      "img_srcset": null,
+      "alt": null,
+      "credit": null,
+      "credit_url": null,
+      "on_site": true,
+      "approx_year": null,
+      "year_range": "1970s",
+      "kind": "touring",
+      "engine": "BMW R90S",
+      "builders": [
+        "Difazio"
+      ],
+      "owners": [
+        {
+          "name": "John May",
+          "notes": "Falcon touring fairing took ~3 hours / two people to remove",
+          "confidence": "medium"
+        }
+      ],
+      "reg": null,
+      "status": "unknown",
+      "sources": [
+        "CM",
+        "site card"
+      ],
+      "confidence": "medium",
+      "schema_version": 1
+    },
+    {
+      "id": "card-12",
+      "year_label": "2007/8",
+      "type_label": "Richard",
+      "name": "BMW R65 Difazio Special",
+      "text": "The last of five lightweight roadsters built by Richard, this one for himself. Over “twenty five or so years” he built several short-stroke R65 specials, “mostly 94m/m bore 850cc”.",
+      "img": "img/bmw-r65-special-1.webp",
+      "img_srcset": "img/bmw-r65-special-1-w480.webp 480w, img/bmw-r65-special-1-w960.webp 960w, img/bmw-r65-special-1.webp 1000w",
+      "alt": "Richard Difazio’s own BMW R65 Difazio Special, built 2007/8",
+      "credit": "Photo: Classic Super Bikes, courtesy of Classic Super Bikes — with thanks.",
+      "credit_url": "https://www.classicsuperbikes.co.uk/catalogue/bikes-for-sale/bmw-r65-difazio-special.html",
+      "on_site": true,
+      "approx_year": 2008,
+      "year_range": "2007/8",
+      "kind": "special",
+      "engine": "BMW R65-based short-stroke (this one ~750cc ceramic bore)",
+      "builders": [
+        "Richard Difazio"
+      ],
+      "owners": [
+        {
+          "name": "Richard Difazio",
+          "notes": "Last of five lightweight roadsters; Exeter Trial 2010",
+          "confidence": "high"
+        }
+      ],
+      "reg": null,
+      "status": "survivor / dealer-listed historically",
+      "sources": [
+        "CSB",
+        "TCM",
+        "site card"
+      ],
+      "confidence": "high",
+      "schema_version": 1
+    }
+  ],
+  "machines_research_only": [
+    {
+      "id": "research-laverda-3c",
+      "name": "Laverda 3C (road-going Difazio triple)",
+      "approx_year": null,
+      "year_range": "1970s",
+      "kind": "road",
+      "on_site": false,
+      "owners": [
+        {
+          "name": "Andy Lloyd",
+          "notes": "From c.1986; only road-going Laverda triple hub-steerer",
+          "confidence": "high"
+        },
+        {
+          "name": "Peter Holden",
+          "notes": "Bought from Lloyd ~2002 (posted Nov 2022)",
+          "confidence": "medium"
+        }
+      ],
+      "sources": [
+        "LaverdaForum",
+        "research-machines.md"
+      ],
+      "confidence": "medium",
+      "status": "survivor"
+    },
+    {
+      "id": "research-hejira-klr600",
+      "name": "Hejira-framed Kawasaki KLR600 feet-forward",
+      "approx_year": 1986,
+      "kind": "feet_forward",
+      "on_site": false,
+      "builders": [
+        "Jan Nelder",
+        "Difazio steering"
+      ],
+      "owners": [
+        {
+          "name": "Colin Russell (later)",
+          "notes": "Per Blezard FF list",
+          "confidence": "medium"
+        }
+      ],
+      "sources": [
+        "bikeweb.com",
+        "research-machines.md"
+      ],
+      "confidence": "medium",
+      "notes": "Creasey comment on Difazio speedo rubber-band drive."
+    },
+    {
+      "id": "research-flying-banana",
+      "name": "Flying Banana (Creasey CX500)",
+      "approx_year": 1981,
+      "kind": "feet_forward",
+      "on_site": false,
+      "builders": [
+        "Royce Creasey",
+        "Difazio hub"
+      ],
+      "owners": [
+        {
+          "name": "Royce Creasey",
+          "confidence": "high"
+        }
+      ],
+      "sources": [
+        "bikeweb.com",
+        "RESEARCH.md"
+      ],
+      "confidence": "high",
+      "notes": "Related / Difazio-steered; not a Difazio complete bike. Keep distinct from Frome-built machines."
+    },
+    {
+      "id": "research-bmw-r75-sidecar",
+      "name": "BMW R75/5 sidecar outfit (1000cc)",
+      "approx_year": null,
+      "year_range": "1970s",
+      "kind": "sidecar",
+      "on_site": false,
+      "owners": [
+        {
+          "name": "Unnamed (one-armed rider; same owner since 1970s per ADVrider snippet)",
+          "confidence": "low"
+        }
+      ],
+      "sources": [
+        "ADVrider snippets (page blocked to box)",
+        "research-machines.md"
+      ],
+      "confidence": "low",
+      "status": "survivor?"
+    },
+    {
+      "id": "research-malc-bmw",
+      "name": "BMW conversion by Malc Wells (oldmalc)",
+      "approx_year": 2008,
+      "kind": "conversion",
+      "on_site": false,
+      "builders": [
+        "Malc Wells",
+        "Jack Difazio (hub batch c.2007)",
+        "John Ransome"
+      ],
+      "owners": [
+        {
+          "name": "Malc Wells",
+          "notes": "Flickr hubsteerer; R45 or 1979 BMW depending on caption set — verify before site use",
+          "confidence": "medium"
+        }
+      ],
+      "sources": [
+        "Flickr",
+        "ADVrider",
+        "Phase 1 overnight note"
+      ],
+      "confidence": "medium",
+      "notes": "Do NOT add Malc Wells photos without Tom approval.",
+      "photo_candidates": [
+        "flickr 4936995141 Jack assembling hub — approval required"
+      ]
+    },
+    {
+      "id": "research-sidecar-outfit-first",
+      "name": "BSA Gold Flash sidecar outfit (first hub-centre)",
+      "approx_year": 1956,
+      "year_range": "1956–58",
+      "kind": "sidecar",
+      "on_site": false,
+      "note_site": "Mentioned in timeline/hero; not a #models card",
+      "owners": [
+        {
+          "name": "Jack Difazio (builder/racer)",
+          "confidence": "high"
+        },
+        {
+          "name": "Henry Body",
+          "notes": "Kept decades; offered Richard Edmonds Auctions lot 216, 11 May 2024 (result unknown)",
+          "confidence": "high"
+        }
+      ],
+      "sources": [
+        "CM",
+        "Classic Bike Mar 2015 via archive.org",
+        "Martin Squires blog",
+        "Phase 1 note"
+      ],
+      "confidence": "medium",
+      "notes": "⚠ 1956 vs 1958 still in conflict (built ~1956, road-raced 1958 is compatible)."
+    }
+  ],
+  "fields_todo": [
+    "Confirm public regs beyond EYB 999J and OXB 75P",
+    "Resolve 1956/1958 first-outfit wording with Tim/Richard",
+    "Attribute Bonhams “only two complete” if restated",
+    "Photo permissions for Bonhams/CBH/forum images",
+    "ADVrider full thread when readable in a real browser"
+  ]
+}
