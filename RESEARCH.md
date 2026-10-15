@@ -163,3 +163,62 @@ Every fact below comes with its source. Items marked ⚠ are single-source or co
 - Peter Holden bought the Laverda 3C from Andy Lloyd "about 20 years back" and also owns a 1926 Ner-a-Car: https://laverdaforum.com/threads/hub-centre-steering-who%E2%80%99s-ridden-a-one.103377/
 - Richard (2011), on the R65 specials: "over the last twenty five or so years, I have made several short stroke special R65's, mostly 94m/m bore 850cc ... 88m/m bore which makes a very useful short stroke 750cc": https://boxerworks.com/forum/viewtopic.php?t=1821
 - Not used: the 1958 vs 1956 sidecar date (the site keeps 1956), and OddBike's "Tesi based on Difazio hub" (single secondary source).
+
+## Overnight research (15 Oct 2026, Phase 1): the five flagged conflicts
+Research only. Nothing on the site was changed. Full working notes: /workspace/notes/overnight-2026-10-15.md (on the box).
+
+New sources
+- [CB15] *Classic Bike* (UK), March 2015, "Southern Classics": the report on the 35th Bristol Classic MotorCycle Show (7–8 Feb 2015) by Gary Pinchin. Read in an unofficial full-text upload on archive.org, so cite the magazine rather than the link: https://archive.org/stream/Classic_Bikes_March_2015_UK/Classic_Bikes_March_2015_UK_djvu.txt
+- [MS15] Martin Squires sketch blog, 9 Feb 2015, covering the same show: http://martinsquiresautomotiveillustration.blogspot.com/2015/02/
+- [RE24] Richard Edmonds Auctions (Chippenham), "Motorcycle Sale inc. the private collection of Henry Body, Douglas Sprint Legend", 11 May 2024. Sale list: https://richardedmonds.atgportals.net/past-auctions. Lot 216 is "Jack Difazio Road Racing \ Grass Track Outfit": https://www.the-saleroom.com/en-gb/auction-catalogues/richard-edmonds-auctions/catalogue-id-ibri10106/lot-c3b60a46-358b-4161-a72c-b1550091131d (the page blocks the box, so it was read via search snippets; the hammer result is unknown).
+- [TNA] The National Archives, HO 334/141/7693: https://discovery.nationalarchives.gov.uk/details/r/C11789530
+- [FBMD] FreeBMD (an index of the GRO birth, marriage and death registers): https://www.freebmd.org.uk/cgi/search.pl. These are index entries only: registration quarter, district, volume and page.
+- [MW] Malc Wells (Flickr "hubsteerer", who posts on ADVrider as "oldmalc"): https://www.flickr.com/photos/hubsteerer/
+- [WB09] Wayback capture of the difazio.co.uk home page, 10 Jul 2009: http://web.archive.org/web/20090710165032/http://www.difazio.co.uk:80/
+
+### 1. First hub-steered sidecar outfit: 1956 or 1958? (⚠ still in conflict, but now narrowed)
+- **1956.** [CM] history page: "in 1956 the first hub centre steered machine appeared … it would be twelve more years before … a solo". [BD] (2019): "working on hub centre steering since 1956". This probably comes from the same history.
+- **About 1957–58.** In Westlake's own hub article [DW] (©2007): "how fifty years ago the first hub steerer came into being", and "it would be another ten years before a solo was built". The solo dates to 1968 [TCM].
+- **1958.** Henry Body, the outfit's later owner, in [CB15]: "1958 TRIUMPH OUTFIT Owned by Henry Body. Jack Difazio road raced this bike in 1958 - the first outfit with hub-centre steering and the forerunner of modern racing outfits." [MS15]: "Henry Body's Grass Track Outfit, previously Jack Difazio's 1958 Road Race outfit. The first to have hub steering." Both are from the same show and the same owner, so they count as one source.
+- **More from Body** [CB15]: "In 1960 he suggested I grasstrack the outfit in the British Championship meeting at South Cerney. I was leading in the final when the track rod broke! I rebuilt it and rode it all through 1961." On grass it had a BSA A10 Super Rocket engine on methanol; by 2015 it had "a 650cc Triumph motor".
+- **[RE24] lot 216:** Jack and Brian Sherwood raced it "until 1959 when he stopped racing". It was then raced by Henry Body and his brothers. The original rolling chassis and hub steering were kept. Engine no. T110-D1586 (per search snippet). No build year appears in the text that was seen.
+- **Reading:** the two dates can both be true (built around 1956 and road-raced in 1958). But each "first" claim rests on one person: Jack via Westlake for 1956, Henry Body for 1958.
+- **New:** the outfit was offered at auction with Henry Body's collection on 11 May 2024. The site's "Henry Body still had the chassis 47 years later" is true as of about 2007, but the current owner is unknown.
+
+### 2. How many were built (~50, 1968–83) and how many survive
+- **The "about 50" figure seems to come from one author.** [CM], [DW] and the [FT] quote are all Andy Westlake. [DW]: "approximately fifty machines were either converted from standard or built from the ground up". [FT], in Westlake's words: "Between 1968 and 1983 … approximately 50", and "approximately half of those 50 bikes survive". [BD] has "some fifty". Andy Lloyd (LaverdaForum, 7 Feb 2004): "approximately 50 front ends produced in the 60's and 70's". Alto Racing (unattributed): "around 50 bikes in the 1970's for the road and most survive".
+- **Survivors:** "many of which survive" [DW, 2007], "approximately half" [FT/Westlake] and "most survive" [ALTO]. ⚠ No count from a register has been found.
+- **⚠ The 1983 end date** is contradicted by [CM]: Dave Ayesthorpe's Gold Wing was fitted with hub steering in 1985, with a second hub in 1987. A new batch of hubs was also made in 2007 (section 3). Production clearly tailed off rather than stopping in 1983.
+- **⚠ "Only two complete Difazio motorcycles" is Bonhams' claim alone** [BD]: "Difazio fitted hub centre steering to some fifty motorcycles … but there were only ever two complete Difazio motorcycles. One had a BSA three cylinder motor, the other featured Ducati power". It conflicts with [DW], which says some machines were "built from the ground up", and with [TCM], where the first solo was "entirely of our manufacture". Bonhams doesn't say what "complete" means. Attribute it to Bonhams rather than state it as fact.
+
+### 3. New hubs: c.2007 or c.2009/10? (resolved: 2007; the stroke date is inferred)
+- **[MW] photo captions on Flickr.** DSCF0062: "John Difazio assembling the hub. Another hub and inner hub are on the bench.2008." (the camera date is 18 Jan 2007, 11:49). DSCF0064, taken a minute later: "Partly assembled hub showing large wheel bearing, and axle clearance cut in inner hub.Jan: 2007." Album "1979 BMW HUBSTEERER": "!979 BMW converted to Difazio Hub steering in 2008." https://www.flickr.com/photos/hubsteerer/4936995141/ · https://www.flickr.com/photos/hubsteerer/4937581508/ · https://www.flickr.com/photos/hubsteerer/4935289832/
+- **ADVrider (search snippets):** "the batch of five we made last year. Its hard to believe he was 93 years old", and "Unfortunately JD had a stroke early this year". The thread is ID 368049. Nearby threads, 366956 and 391642, were started on 27 Jul 2008 and 3 Oct 2008. So this thread probably dates from about Aug–Sep 2008 (an inference from ID order; the post dates weren't seen).
+- **Conclusion:** the hubs were made around January 2007, and the site's "Around 2007" stands. ⚠ Jack's stroke was most likely early 2008 (inferred). ⚠ Also, "93" in Jan 2007 doesn't fit a 25 Aug 1914 birth (he would have been 92), so the ages in these anecdotes are approximate.
+
+### 4. Pascal: naturalisation and records (partly resolved; his home town is still open)
+- **Naturalised 26 March 1936** [TNA]: "Naturalisation Certificate: Pasquale Di Fazio. From Italy. Resident in Frome, Somerset … Home Office Reference: F 2760. Certificate AZ7693 issued 26 March 1936." The Home Office case file (ref. F 2760, probably in series HO 405) should give his birthplace. Ordering it from TNA is the way to settle the home town.
+- **Marriage:** "di Fazio, Pasquale", Frome, Jun qtr 1910 (5c 849) [FBMD]. Indexes before 1912 don't show the spouse.
+- **Jack's birth:** "Difasie, Giovanni", mother's maiden name Paoli, Frome, Dec qtr 1914 (5c 636) [FBMD]. Giovanni is the Italian form of John, so this is evidently Jack. It fits [FSYB]'s "born 25 August 1914" and the family's account that Pascal "married the daughter" of an Italian family.
+  - ⚠ Other Di Fazio births in Frome: Annunziata (Jun 1911), Maria M (Sep 1912, mother Paoli) and Angelo (Sep 1913, mother Paoli). [FSYB] says three children.
+- **Death:** "Pascal Difazio", Frome, Mar qtr 1973, DoB 21 Apr 1889 [FBMD]. This matches [FSYB]'s birth date exactly.
+- **Jack's marriage:** John Difazio and Sylvia E. F. M. Chapman, Frome, Mar qtr 1936 (5c 657) [FBMD]. Sylvia Elizabeth F. M. Difazio, born 29 Jun 1914, died in 1988 (Bath district) [FBMD]. This confirms [CM]'s "wife Sylvia".
+- **Home town:** "Michael St Angelo, near Casino" [FSYB] is still unverified. A London Gazette notice search for "Di Fazio" in 1936 returned nothing (old issues are only partly searchable).
+
+### 5. Trading dates and the nickname
+- **The closure was in 2008 (resolved).** Richard in [FSYB]: "in 2008 it fell to me to close the business that my Grandfather started." It agrees with Historypin. The website was still up in July 2009 [WB09], selling BMW spares and saying "We are currently low on stock & will buy good clean BMW air cooled twins for cash". Boxerworks (Mar 2011) says "the shop closed a couple of years ago". ⚠ A live website isn't proof the shop was trading. The site's "about 2008" is safe.
+- **The nickname is still in conflict.** Westlake gives two versions: "during the time he began grass tracking he became known as Jack" [CM], and "he earned the name of 'Jack' when he started road racing" [DW]. No third source has been found. The site's neutral wording ("John, known as 'Jack'") is fine.
+
+### Other checks
+- ⚠ **Frome Times date.** The article page now shows "March 6, 2024", and the earliest Wayback capture is 20 Apr 2024. The "9 May 2012" date given in Key sources and on the site, and so the "2012" year of the Kay Engineering Trophy, are not confirmed by the live page. Verify them before relying on them.
+- ⚠ **90th birthday timing.** Andy Lloyd (7 Feb 2004) says the 90th birthday event was "last weekend", i.e. around 31 Jan–1 Feb 2004. Jack's birth (25 Aug 1914, and the Dec qtr 1914 registration) puts his actual 90th in Aug 2004. The party may have been held early, or it was another occasion.
+
+### Image candidates (15 Oct 2026)
+| Image | URL | Licence | Status |
+|---|---|---|---|
+| Jack Difazio assembling a new hub, about 2007 (Malc Wells) | https://www.flickr.com/photos/hubsteerer/4936995141/ | CC BY-NC-SA 2.0 | ✅ licensed for non-commercial use with attribution and share-alike. Strong candidate for the "Jack at work" placeholder; needs Tom's OK |
+| Partly assembled hub, Jan 2007 (Malc Wells) | https://www.flickr.com/photos/hubsteerer/4937581508/ | all rights reserved | ❓ ask Malc |
+| Malc Wells' 1979 BMW, converted in 2008 | https://www.flickr.com/photos/hubsteerer/4935289832/ | all rights reserved | ❓ ask Malc |
+| Triumph-badged Trident with "DIFAZIO HUB STEERING" fairing, 1 Jun 2014 (Cédric Janodet) | https://www.flickr.com/photos/jano2106/14241173728/ | CC BY-NC-SA 2.0 | ✅ licensed (NC/SA). The machine and its owner aren't identified, so caption it generically |
+| Laverda with hub-centre conversion, Manx GP 2010 (olly650) | https://www.flickr.com/photos/olly650/4980767702/ | CC BY-NC-ND 2.0 | ⚠ not confirmed as a Difazio; no-derivatives licence |
+| Catherine Street, Frome, 27 Mar 2022 (Colin Smith, Geograph) | https://commons.wikimedia.org/wiki/File:Frome_-_Catherine_Street_-_geograph.org.uk_-_7148039.jpg | CC BY-SA 2.0 | ✅ licensed. Street view only; No. 25 can't be identified in it |
