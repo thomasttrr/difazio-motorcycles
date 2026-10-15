@@ -68,6 +68,21 @@ document.addEventListener('keydown',e=>{if(e.key=='Escape'){if(moreBtn.getAttrib
 document.addEventListener('pointerdown',e=>{if(!more.contains(e.target))setMore(false)});
 let raf;const relayout=()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(layout)};
 new ResizeObserver(relayout).observe(topnav);
+new ResizeObserver(relayout).observe(brand);
+// logo compact-on-scroll (JS fallback + layout trigger for scroll-driven)
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const scrollDrive=CSS.supports&&CSS.supports('animation-timeline','scroll()');
+function setCompact(on){const c=!!on;if(brand.classList.contains('is-compact')===c)return;brand.classList.toggle('is-compact',c);relayout()}
+function syncCompact(){setCompact(scrollY>80)}
+if(!scrollDrive||reduceMotion){
+  addEventListener('scroll',()=>{if(!reduceMotion)syncCompact();else setCompact(scrollY>80)},{passive:true});
+  syncCompact();
+}else{
+  // still sync class for a11y/state and remeasure when width changes via RO on brand
+  addEventListener('scroll',()=>{brand.classList.toggle('is-compact',scrollY>80)},{passive:true});
+  brand.classList.toggle('is-compact',scrollY>80);
+}
+
 addEventListener('resize',relayout);
 document.fonts&&document.fonts.ready.then(relayout);
 layout();
