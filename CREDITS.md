@@ -27,3 +27,8 @@ Images remain the property of their owners. Displayed with credit and thanks.
 - img/flickr-suzuki-tourer.webp: A Difazio-badged Suzuki tourer with fairing and panniers (Flickr)
 - img/flickr-suzuki-hub.webp: Close-up of a Difazio hub-centre front end on a Suzuki (Flickr)
 - img/flickr-suzuki-yellow.webp: A yellow hub-steered Suzuki in Difazio style (Flickr)
+
+## 3D model
+- models/cafe-racer-1024.glb, models/cafe-racer-512.glb: "Cafe racer motorcycle" by Innerscene, CC0 1.0 (public domain, no attribution required; credited with thanks). Source: https://www.innerscene.com/tools/library/3d-parts/cafe-racer-motorcycle-e3fce667
+  Changes: tank and seat-cowl paint changed from teal to oxblood; parts regrouped (chassis / fork / front wheel / rear wheel) and merged by material; textures resized to 1024px or 512px WebP; meshopt-compressed (gltf-transform); glass transmission disabled at runtime. The hub-centre front end (swinging arms, king-pin, outer hub, drag link) is original code in hub3d.js. The second disc and calipers are mirrored copies of the model's own.
+- three.js r186 (MIT), plus GLTFLoader, OrbitControls, RoomEnvironment and the meshopt decoder, are vendored in /vendor/three/ (see vendor/three/LICENSE).
