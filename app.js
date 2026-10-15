@@ -69,17 +69,32 @@ document.addEventListener('pointerdown',e=>{if(!more.contains(e.target))setMore(
 let raf;const relayout=()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(layout)};
 new ResizeObserver(relayout).observe(topnav);
 new ResizeObserver(relayout).observe(brand);
-// logo: letters retire over 0-200px scroll. CSS scroll-driven when supported, rAF fallback otherwise; reduced motion = instant swap
+// logo: typewriter retire from the end (o,i,z,a,f,i) over ~600px of scroll; one rAF driver for every browser.
+// Each letter owns its own slice of progress (light 15% overlap) with smoothstep easing; display progress is lerped toward scroll progress.
+// Reduced motion: no lerp/fade, each letter drops out instantly at its threshold.
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
-// WebKit advertises scroll() but stalls animating a registered custom property on it, so only Chromium uses the CSS path
-const scrollDrive=!!navigator.userAgentData&&CSS.supports&&CSS.supports('animation-timeline','scroll()');
-let lraf=0,lastP=-1;
-function logoP(){lraf=0;const p=reduceMotion.matches?(scrollY>80?1:0):Math.min(1,Math.max(0,scrollY/200));if(p!==lastP){lastP=p;brand.style.setProperty('--p',p)}}
-function logoMode(){const js=!scrollDrive||reduceMotion.matches;document.documentElement.classList.toggle('logo-js',js);if(js){lastP=-1;logoP()}else brand.style.removeProperty('--p')}
-addEventListener('scroll',()=>{if(document.documentElement.classList.contains('logo-js')&&!lraf)lraf=requestAnimationFrame(logoP)},{passive:true});
-reduceMotion.addEventListener&&reduceMotion.addEventListener('change',logoMode);
-addEventListener('pageshow',e=>{if(e.persisted){logoMode();relayout()}});
-logoMode();
+const letters=[...brand.querySelectorAll('.brand-l')].reverse();
+const N=letters.length,SL=1/N,OV=.15*SL;
+let lCur=-1,lRaf=0,lUntil=0,lRange=600;
+const sizeRange=()=>{lRange=Math.max(480,Math.min(700,(visualViewport?visualViewport.height:innerHeight)*.75))};
+// clamp: iOS rubber-band gives negative / overshoot scrollY
+const target=()=>Math.min(1,Math.max(0,Math.max(0,scrollY)/lRange));
+function paint(p){const rm=reduceMotion.matches;letters.forEach((el,i)=>{let t=(p-(i*SL-(i?OV:0)))/(SL+(i?OV:0));t=Math.min(1,Math.max(0,t));t=rm?(t>=.5?1:0):t*t*(3-2*t);el.style.setProperty('--t',t.toFixed(4))})}
+// reads scrollY every frame while scrolling and ~300ms after (covers momentum frames with no scroll event), snaps within epsilon
+function tick(now){const tg=target();if(lCur<0||reduceMotion.matches)lCur=tg;else{lCur+=(tg-lCur)*.22;if(Math.abs(tg-lCur)<.002)lCur=tg}paint(lCur);
+  if(lCur!==tg||now<lUntil)lRaf=requestAnimationFrame(tick);else lRaf=0}
+// safety net: if rAF is starved (iOS low-power, momentum), snap to the true position shortly after scrolling stops
+let lSnap=0;const snap=()=>{lCur=target();paint(lCur)};
+const kick=()=>{lUntil=performance.now()+300;clearTimeout(lSnap);lSnap=setTimeout(snap,400);if(!lRaf)lRaf=requestAnimationFrame(tick)};
+const resync=()=>{sizeRange();lCur=-1;kick()};
+addEventListener('scroll',kick,{passive:true});
+addEventListener('scrollend',kick);
+addEventListener('resize',resync);
+addEventListener('orientationchange',resync);
+window.visualViewport&&visualViewport.addEventListener('resize',resync);
+reduceMotion.addEventListener&&reduceMotion.addEventListener('change',resync);
+addEventListener('pageshow',e=>{resync();if(e.persisted)relayout()});
+sizeRange();lCur=-1;tick(performance.now());
 addEventListener('resize',relayout);
 addEventListener('pageshow',e=>{if(e.persisted){brand.classList.toggle('is-compact',scrollY>80);relayout()}});
 document.fonts&&document.fonts.ready.then(relayout);

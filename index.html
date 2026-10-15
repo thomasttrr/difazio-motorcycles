@@ -397,22 +397,14 @@ html:not(.nav-ready) .menu::-webkit-scrollbar{display:none}
 .nav.burger-mode .menu a.active{color:var(--accent)!important;background:var(--accent-soft)!important}
 @media(max-width:900px){.more{display:none!important}.menu{overflow:visible;-webkit-mask-image:none}}
 
-/* ===== Home logo: letters retire on scroll (0-200px) ===== */
-@property --p{syntax:'<number>';inherits:true;initial-value:0}
-.brand{color:var(--text)}.brand-text>span:not(.brand-dot){color:var(--text)}
+/* ===== Home logo: typewriter retire on scroll, driven by app.js (--t per letter, 0..1) ===== */
 .brand-text{display:inline-flex;align-items:baseline;line-height:1;white-space:nowrap}
+.brand-text>span:not(.brand-dot){color:var(--text)}
 .brand-dot{color:var(--accent)}
-.brand-l{display:inline-block;overflow:hidden;vertical-align:bottom;
-  --t:clamp(0,calc((var(--p) - var(--s)) / .34),1);
+.brand-l{--t:0;display:inline-block;overflow:hidden;vertical-align:bottom;
   max-width:calc((1 - var(--t)) * .8em);opacity:calc(1 - var(--t));
-  transform:translateX(calc(var(--t) * -.25em));filter:blur(calc(var(--t) * 2px))}
-.brand-l:nth-child(7){--s:0}.brand-l:nth-child(6){--s:.13}.brand-l:nth-child(5){--s:.26}
-.brand-l:nth-child(4){--s:.39}.brand-l:nth-child(3){--s:.52}.brand-l:nth-child(2){--s:.66}
-@supports (animation-timeline:scroll()){
-  html:not(.logo-js) .brand{animation:brandP linear both;animation-timeline:scroll(root);animation-range:0px 200px}
-}
-@keyframes brandP{from{--p:0}to{--p:1}}
-@media(prefers-reduced-motion:reduce){.brand{animation:none!important}.brand-l{filter:none;transform:none}}
+  transform:translateX(calc(var(--t) * -.18em));filter:blur(calc(var(--t) * 1.5px))}
+@media(prefers-reduced-motion:reduce){.brand-l{transform:none;filter:none}}
 </style></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><a href="#top" class="brand" aria-label="Difazio home"><span class="brand-text" aria-hidden="true"><span>D</span><span class="brand-l">i</span><span class="brand-l">f</span><span class="brand-l">a</span><span class="brand-l">z</span><span class="brand-l">i</span><span class="brand-l">o</span><span class="brand-dot">.</span></span></a>
@@ -543,4 +535,4 @@ function upd(){cap.textContent=C[x.dataset.mode][+x.dataset.brake]}
 x.addEventListener('click',e=>{const s=e.target.closest('[data-set]');if(s){x.dataset.mode=s.dataset.set;x.querySelectorAll('[data-set]').forEach(o=>o.setAttribute('aria-pressed',o===s));upd();return}if(e.target.closest('.brake'))toggle()});
 function toggle(){const on=x.dataset.brake!='1';x.dataset.brake=on?'1':'0';br.setAttribute('aria-pressed',on);br.textContent=on?'Release brake':'Brake hard';upd()}upd()})();</script><script type="importmap">{"imports":{"three":"/vendor/three/three.module.min.js","three/addons/":"/vendor/three/addons/"}}</script>
 <script type="module" src="hub3d.js?v=2"></script>
-<script src="app.js?v=16" defer></script></body></html>
+<script src="app.js?v=17" defer></script></body></html>
