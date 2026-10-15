@@ -21,8 +21,8 @@ let cur=0;show(0);
 nav.addEventListener('keydown',e=>{const k={ArrowRight:1,ArrowDown:1,ArrowLeft:-1,ArrowUp:-1}[e.key];if(k){e.preventDefault();show((cur+k+T.length)%T.length,true)}else if(e.key=='Home'){show(0,true)}else if(e.key=='End'){show(T.length-1,true)}});
 // menu
 const burger=document.querySelector('.burger'),menu=document.getElementById('menu');
-burger.onclick=()=>{const o=burger.getAttribute('aria-expanded')!='true';burger.setAttribute('aria-expanded',o);menu.classList.toggle('open',o)};
-menu.addEventListener('click',e=>{if(e.target.tagName=='A'){burger.setAttribute('aria-expanded','false');menu.classList.remove('open')}});
+burger.onclick=()=>{const o=burger.getAttribute('aria-expanded')!='true';burger.setAttribute('aria-expanded',o);menu.classList.toggle('open',o);document.body.classList.toggle('menu-open',o);burger.setAttribute('aria-label',o?'Close menu':'Open menu')};
+menu.addEventListener('click',e=>{if(e.target.tagName=='A'){burger.setAttribute('aria-expanded','false');menu.classList.remove('open');document.body.classList.remove('menu-open');burger.setAttribute('aria-label','Open menu')}});
 // active section
 const links=[...document.querySelectorAll('.menu a,.bnav a')];
 const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.hash=='#'+en.target.id))}),{rootMargin:'-45% 0px -50% 0px'});

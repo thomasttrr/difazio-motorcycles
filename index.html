@@ -176,8 +176,28 @@ h1 span,.brand span,.eyebrow,.tag,.factbox b,.stats b,.sf svg,.hx .lbl,.hx .tank
 .menu a.active{background:var(--accent-soft);color:var(--accent);box-shadow:inset 0 0 0 1px var(--glass-edge-metal)}
 @media(hover:hover) and (pointer:fine){.menu a:hover{color:var(--text);background:rgba(255,255,255,.06);transform:translateY(-1px)}}
 @media(max-width:900px){
-  .menu{max-width:none;background:var(--glass2);border-bottom:1px solid var(--glass-edge);box-shadow:var(--depth-lg);padding:12px var(--gutter) 20px}
-  .menu a{font-size:17px;padding:14px 16px;min-height:48px}
+  .menu{
+    max-width:none;
+    background:rgba(28,30,34,.94)!important;
+    border-bottom:1px solid var(--glass-edge);
+    box-shadow:var(--depth-lg),inset 0 1px 0 var(--glass-shine);
+    padding:14px var(--gutter) 22px;
+    gap:6px;
+  }
+  @supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+    .menu{
+      background:rgba(28,30,34,.92)!important;
+      backdrop-filter:blur(28px) saturate(1.35)!important;
+      -webkit-backdrop-filter:blur(28px) saturate(1.35)!important;
+    }
+  }
+  @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+    .menu{background:#1c1e22!important}
+  }
+  .menu a{font-size:17px;padding:14px 16px;min-height:48px;color:var(--text)!important;font-weight:500}
+  .menu a.active{color:var(--accent)!important;background:var(--accent-soft)!important}
+  body.menu-open{overflow:hidden;touch-action:none}
+  body.menu-open .nav{z-index:60}
 }
 @media(max-width:700px){
   .bnav{
@@ -191,7 +211,7 @@ h1 span,.brand span,.eyebrow,.tag,.factbox b,.stats b,.sf svg,.hx .lbl,.hx .tank
 }
 
 @supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
-  .nav,.bnav,.menu,.cards article,.tl-card,.sf,.factbox,blockquote,.stats>div,.hx,.hx-ctrl,.hx-hint,.hx-done,.lightbox button,.hero-photo figcaption,.ph,.gallery .ph,.tim-photo .ph,.cards article:not(.has-img) .ph-slot{
+  .nav,.bnav,.cards article,.tl-card,.sf,.factbox,blockquote,.stats>div,.hx,.hx-ctrl,.hx-hint,.hx-done,.lightbox button,.hero-photo figcaption,.ph,.gallery .ph,.tim-photo .ph,.cards article:not(.has-img) .ph-slot{
     backdrop-filter:blur(var(--blur)) saturate(var(--gsat));
     -webkit-backdrop-filter:blur(var(--blur)) saturate(var(--gsat));
   }
@@ -471,4 +491,4 @@ function upd(){cap.textContent=C[x.dataset.mode][+x.dataset.brake]}
 x.addEventListener('click',e=>{const s=e.target.closest('[data-set]');if(s){x.dataset.mode=s.dataset.set;x.querySelectorAll('[data-set]').forEach(o=>o.setAttribute('aria-pressed',o===s));upd();return}if(e.target.closest('.brake'))toggle()});
 function toggle(){const on=x.dataset.brake!='1';x.dataset.brake=on?'1':'0';br.setAttribute('aria-pressed',on);br.textContent=on?'Release brake':'Brake hard';upd()}upd()})();</script><script type="importmap">{"imports":{"three":"/vendor/three/three.module.min.js","three/addons/":"/vendor/three/addons/"}}</script>
 <script type="module" src="hub3d.js?v=2"></script>
-<script src="app.js?v=12" defer></script></body></html>
+<script src="app.js?v=13" defer></script></body></html>
