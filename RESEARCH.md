@@ -222,3 +222,9 @@ New sources
 | Triumph-badged Trident with "DIFAZIO HUB STEERING" fairing, 1 Jun 2014 (Cédric Janodet) | https://www.flickr.com/photos/jano2106/14241173728/ | CC BY-NC-SA 2.0 | ✅ licensed (NC/SA). The machine and its owner aren't identified, so caption it generically |
 | Laverda with hub-centre conversion, Manx GP 2010 (olly650) | https://www.flickr.com/photos/olly650/4980767702/ | CC BY-NC-ND 2.0 | ⚠ not confirmed as a Difazio; no-derivatives licence |
 | Catherine Street, Frome, 27 Mar 2022 (Colin Smith, Geograph) | https://commons.wikimedia.org/wiki/File:Frome_-_Catherine_Street_-_geograph.org.uk_-_7148039.jpg | CC BY-SA 2.0 | ✅ licensed. Street view only; No. 25 can't be identified in it |
+
+## Site changes applied 15 Oct 2026 (approved by Tom)
+- Pascal paragraph now uses Draft A (sources: Frome Society Year Book 16; GRO indexes via FreeBMD; TNA HO 334/141/7693, https://discovery.nationalarchives.gov.uk/details/r/C11789530). Private family details (later marriage, living descendants) deliberately omitted.
+- Hub section gained a short first-outfit/numbers paragraph (Draft B, condensed): 1956 per Westlake [CM]; 1958 per Henry Body in *Classic Bike*, March 2015; ~50 "converted or built from the ground up" per [DW].
+- Wording: "about 50 … mostly in the 1970s" (hero stat, gallery lead); Bonhams "only two complete" now attributed to Bonhams (card, lightbox, CREDITS); Henry Body "kept it for decades; offered at auction with his collection in May 2024"; closure "2008" (meta description, origins, timeline).
+- Still open: timeline "1980s · Production winds down by 1983" conflicts with the 1985 Gold Wing and 2007 hubs (not changed; not in the approved list). Kay Trophy year vs Frome Times dateline unresolved.

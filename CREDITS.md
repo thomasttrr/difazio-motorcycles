@@ -9,10 +9,11 @@ Images remain the property of their owners. Displayed with credit and thanks.
 - **Classic Super Bikes**: Classic Super Bikes, https://www.classicsuperbikes.co.uk/catalogue/bikes-for-sale/bmw-r65-difazio-special.html
 - **Access Norton forum**: Tim (forum member “difazio”), https://www.accessnorton.com/NortonCommando/difazio-hub-steering-commando.5851/
 - **bikeme.tv**: BIKE ME!, https://bikeme.tv/index.php/history-of-the-front-end-part-ii/
+- **Flickr (Malc Wells, “hubsteerer”)**: “DSCF0062”, Jack Difazio assembling a hub, around 2007 (camera date Jan 2007; Flickr caption says 2008). Author: Malc Wells. https://www.flickr.com/photos/hubsteerer/4936995141/ Licence: CC BY-NC-SA 2.0, https://creativecommons.org/licenses/by-nc-sa/2.0/ . Adapted (resized, WebP); adaptation shared under CC BY-NC-SA 2.0. Largest public size used (1024×768; original not public).
 - **Wikimedia Commons**: Keith Nunns, CC BY 2.0, https://commons.wikimedia.org/wiki/File:Nessie_Kawasaki_1000_hub_centre_steering.JPG
 
 ## Files
-- img/ducati-750-1.webp: The 1975 Difazio Ducati 750GTE, one of only two complete Difazio motorcycles (Bonhams lot 386 (2019))
+- img/ducati-750-1.webp: The 1975 Difazio Ducati 750GTE, described by Bonhams as one of only two complete Difazio motorcycles (Bonhams lot 386 (2019))
 - img/ducati-750-2.webp: Difazio Ducati 750GTE: hub-centre front end and twin discs (Bonhams lot 386 (2019))
 - img/nessie-laverda-1.webp: The ex-Mead & Tomkinson 1976 Laverda 1000 endurance racer on its Difazio-derived hub-centre front end (Bonhams lot 417 (2007))
 - img/nessie-laverda-2.webp: Laverda “Nessie”: the frameless, engine-as-chassis layout (Bonhams lot 417 (2007))
@@ -32,3 +33,4 @@ Images remain the property of their owners. Displayed with credit and thanks.
 - models/cafe-racer-1024.glb, models/cafe-racer-512.glb: "Cafe racer motorcycle" by Innerscene, CC0 1.0 (public domain, no attribution required; credited with thanks). Source: https://www.innerscene.com/tools/library/3d-parts/cafe-racer-motorcycle-e3fce667
   Changes: tank and seat-cowl paint changed from teal to oxblood; parts regrouped (chassis / fork / front wheel / rear wheel) and merged by material; textures resized to 1024px or 512px WebP; meshopt-compressed (gltf-transform); glass transmission disabled at runtime. The hub-centre front end (swinging arms, king-pin, outer hub, drag link) is original code in hub3d.js. The second disc and calipers are mirrored copies of the model's own.
 - three.js r186 (MIT), plus GLTFLoader, OrbitControls, RoomEnvironment and the meshopt decoder, are vendored in /vendor/three/ (see vendor/three/LICENSE).
+- img/jack-hub-2007.webp (+ -w480, -w960): Jack Difazio assembling a new hub at the bench, around 2007 (Malc Wells, Flickr, CC BY-NC-SA 2.0)

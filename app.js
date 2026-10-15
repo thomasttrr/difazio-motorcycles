@@ -12,7 +12,7 @@ const T=[["1914","Pascal Difazio is selling bicycles from a cottage on Catherine
 ["1980s","Production winds down by 1983 and the shop turns to BMW twins."],
 ["Early 1990s","The workshops face redevelopment, and John Ransome saves the moulds and spares."],
 ["c.2007","Aged 93, Jack helps make a new batch of hubs. Richard builds the last of his five R65 Difazio Specials."],
-["c.2008","Richard closes the shop at No. 25 after nearly 90 years there."],
+["2008","Richard closes the shop at No. 25 after nearly 90 years there."],
 ["2012","A Hurricane-engined Difazio wins the Kay Engineering Trophy at Stafford. Jack Difazio dies the same year."]];
 const nav=document.querySelector('.tl-nav'),card=document.querySelector('.tl-card');
 T.forEach(([y],i)=>{const b=document.createElement('button');b.type='button';b.textContent=y;b.setAttribute('role','tab');b.onclick=()=>show(i,true);nav.append(b)});
