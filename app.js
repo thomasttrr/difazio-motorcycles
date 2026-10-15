@@ -69,21 +69,19 @@ document.addEventListener('pointerdown',e=>{if(!more.contains(e.target))setMore(
 let raf;const relayout=()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(layout)};
 new ResizeObserver(relayout).observe(topnav);
 new ResizeObserver(relayout).observe(brand);
-// logo compact-on-scroll (JS fallback + layout trigger for scroll-driven)
-const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const scrollDrive=CSS.supports&&CSS.supports('animation-timeline','scroll()');
-function setCompact(on){const c=!!on;if(brand.classList.contains('is-compact')===c)return;brand.classList.toggle('is-compact',c);relayout()}
-function syncCompact(){setCompact(scrollY>80)}
-if(!scrollDrive||reduceMotion){
-  addEventListener('scroll',()=>{if(!reduceMotion)syncCompact();else setCompact(scrollY>80)},{passive:true});
-  syncCompact();
-}else{
-  // still sync class for a11y/state and remeasure when width changes via RO on brand
-  addEventListener('scroll',()=>{brand.classList.toggle('is-compact',scrollY>80)},{passive:true});
-  brand.classList.toggle('is-compact',scrollY>80);
-}
-
+// logo: letters retire over 0-200px scroll. CSS scroll-driven when supported, rAF fallback otherwise; reduced motion = instant swap
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+// WebKit advertises scroll() but stalls animating a registered custom property on it, so only Chromium uses the CSS path
+const scrollDrive=!!navigator.userAgentData&&CSS.supports&&CSS.supports('animation-timeline','scroll()');
+let lraf=0,lastP=-1;
+function logoP(){lraf=0;const p=reduceMotion.matches?(scrollY>80?1:0):Math.min(1,Math.max(0,scrollY/200));if(p!==lastP){lastP=p;brand.style.setProperty('--p',p)}}
+function logoMode(){const js=!scrollDrive||reduceMotion.matches;document.documentElement.classList.toggle('logo-js',js);if(js){lastP=-1;logoP()}else brand.style.removeProperty('--p')}
+addEventListener('scroll',()=>{if(document.documentElement.classList.contains('logo-js')&&!lraf)lraf=requestAnimationFrame(logoP)},{passive:true});
+reduceMotion.addEventListener&&reduceMotion.addEventListener('change',logoMode);
+addEventListener('pageshow',e=>{if(e.persisted){logoMode();relayout()}});
+logoMode();
 addEventListener('resize',relayout);
+addEventListener('pageshow',e=>{if(e.persisted){brand.classList.toggle('is-compact',scrollY>80);relayout()}});
 document.fonts&&document.fonts.ready.then(relayout);
 layout();
 // active section
