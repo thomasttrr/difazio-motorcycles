@@ -70,25 +70,30 @@ let raf;const relayout=()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(
 new ResizeObserver(relayout).observe(topnav);
 new ResizeObserver(relayout).observe(brand);
 // logo: typewriter retire from the end (o,i,z,a,f,i) over ~600px of scroll; one rAF driver for every browser.
-// Each letter owns its own slice of progress (light 15% overlap) with smoothstep easing; display progress is lerped toward scroll progress.
-// Reduced motion: no lerp/fade, each letter drops out instantly at its threshold.
+// Display progress is lerped toward scroll progress.
+// Reduced motion: opacity fade + collapse only (no blur/drift via CSS), no lerp.
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const letters=[...brand.querySelectorAll('.brand-l')].reverse();
-const N=letters.length,SL=1/N,OV=.15*SL;
+// each letter owns a slice; slices overlap 30% so the next fade starts while the previous collapses.
+// within a slice: opacity fades over 0-75%, width collapses over 65-100% (once mostly transparent). Reverse mirrors it.
+const N=letters.length,OVL=.3,SL=1/(N-(N-1)*OVL),STEP=SL*(1-OVL);
+const ease=t=>t<=0?0:t>=1?1:t*t*(3-2*t),seg=(t,a,b)=>ease((t-a)/(b-a));
 let lCur=-1,lRaf=0,lUntil=0,lRange=600;
-const sizeRange=()=>{lRange=Math.max(480,Math.min(700,(visualViewport?visualViewport.height:innerHeight)*.75))};
+const sizeRange=()=>{lRange=Math.max(480,Math.min(700,(window.visualViewport?visualViewport.height:innerHeight)*.75))};
 // clamp: iOS rubber-band gives negative / overshoot scrollY
-const target=()=>Math.min(1,Math.max(0,Math.max(0,scrollY)/lRange));
-function paint(p){const rm=reduceMotion.matches;letters.forEach((el,i)=>{let t=(p-(i*SL-(i?OV:0)))/(SL+(i?OV:0));t=Math.min(1,Math.max(0,t));t=rm?(t>=.5?1:0):t*t*(3-2*t);el.style.setProperty('--t',t.toFixed(4))})}
+const target=()=>scrollY<=2?0:Math.min(1,scrollY/lRange);
+function paint(p){if(p<=0){letters.forEach(el=>{el.style.removeProperty('--f');el.style.removeProperty('--w')});return}letters.forEach((el,i)=>{const t=(p-i*STEP)/SL;el.style.setProperty('--f',seg(t,0,.75).toFixed(4));el.style.setProperty('--w',seg(t,.65,1).toFixed(4))})}
 // reads scrollY every frame while scrolling and ~300ms after (covers momentum frames with no scroll event), snaps within epsilon
 function tick(now){const tg=target();if(lCur<0||reduceMotion.matches)lCur=tg;else{lCur+=(tg-lCur)*.22;if(Math.abs(tg-lCur)<.002)lCur=tg}paint(lCur);
   if(lCur!==tg||now<lUntil)lRaf=requestAnimationFrame(tick);else lRaf=0}
 // safety net: if rAF is starved (iOS low-power, momentum), snap to the true position shortly after scrolling stops
 let lSnap=0;const snap=()=>{lCur=target();paint(lCur)};
-const kick=()=>{lUntil=performance.now()+300;clearTimeout(lSnap);lSnap=setTimeout(snap,400);if(!lRaf)lRaf=requestAnimationFrame(tick)};
+let lSettle=0;
+const kick=()=>{lUntil=performance.now()+300;clearTimeout(lSnap);clearTimeout(lSettle);lSnap=setTimeout(snap,400);lSettle=setTimeout(snap,1200);if(!lRaf)lRaf=requestAnimationFrame(tick)};
 const resync=()=>{sizeRange();lCur=-1;kick()};
 addEventListener('scroll',kick,{passive:true});
-addEventListener('scrollend',kick);
+addEventListener('scrollend',()=>{kick();snap()});
+addEventListener('touchend',kick,{passive:true});
 addEventListener('resize',resync);
 addEventListener('orientationchange',resync);
 window.visualViewport&&visualViewport.addEventListener('resize',resync);
@@ -96,7 +101,6 @@ reduceMotion.addEventListener&&reduceMotion.addEventListener('change',resync);
 addEventListener('pageshow',e=>{resync();if(e.persisted)relayout()});
 sizeRange();lCur=-1;tick(performance.now());
 addEventListener('resize',relayout);
-addEventListener('pageshow',e=>{if(e.persisted){brand.classList.toggle('is-compact',scrollY>80);relayout()}});
 document.fonts&&document.fonts.ready.then(relayout);
 layout();
 // active section

@@ -401,9 +401,9 @@ html:not(.nav-ready) .menu::-webkit-scrollbar{display:none}
 .brand-text{display:inline-flex;align-items:baseline;line-height:1;white-space:nowrap}
 .brand-text>span:not(.brand-dot){color:var(--text)}
 .brand-dot{color:var(--accent)}
-.brand-l{--t:0;display:inline-block;overflow:hidden;vertical-align:bottom;
-  max-width:calc((1 - var(--t)) * .8em);opacity:calc(1 - var(--t));
-  transform:translateX(calc(var(--t) * -.18em));filter:blur(calc(var(--t) * 1.5px))}
+.brand-l{--f:0;--w:0;display:inline-block;overflow:hidden;vertical-align:bottom;
+  max-width:calc((1 - var(--w)) * .8em);opacity:calc(1 - var(--f));
+  transform:translate(calc(var(--f) * .12em),calc(var(--f) * -.14em));filter:blur(calc(var(--f) * 3px))}
 @media(prefers-reduced-motion:reduce){.brand-l{transform:none;filter:none}}
 </style></head><body>
 <a class="skip" href="#main">Skip to content</a>
@@ -535,4 +535,4 @@ function upd(){cap.textContent=C[x.dataset.mode][+x.dataset.brake]}
 x.addEventListener('click',e=>{const s=e.target.closest('[data-set]');if(s){x.dataset.mode=s.dataset.set;x.querySelectorAll('[data-set]').forEach(o=>o.setAttribute('aria-pressed',o===s));upd();return}if(e.target.closest('.brake'))toggle()});
 function toggle(){const on=x.dataset.brake!='1';x.dataset.brake=on?'1':'0';br.setAttribute('aria-pressed',on);br.textContent=on?'Release brake':'Brake hard';upd()}upd()})();</script><script type="importmap">{"imports":{"three":"/vendor/three/three.module.min.js","three/addons/":"/vendor/three/addons/"}}</script>
 <script type="module" src="hub3d.js?v=2"></script>
-<script src="app.js?v=17" defer></script></body></html>
+<script src="app.js?v=18" defer></script></body></html>
