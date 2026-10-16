@@ -228,3 +228,44 @@ New sources
 - Hub section gained a short first-outfit/numbers paragraph (Draft B, condensed): 1956 per Westlake [CM]; 1958 per Henry Body in *Classic Bike*, March 2015; ~50 "converted or built from the ground up" per [DW].
 - Wording: "about 50 … mostly in the 1970s" (hero stat, gallery lead); Bonhams "only two complete" now attributed to Bonhams (card, lightbox, CREDITS); Henry Body "kept it for decades; offered at auction with his collection in May 2024"; closure "2008" (meta description, origins, timeline).
 - Still open: timeline "1980s · Production winds down by 1983" conflicts with the 1985 Gold Wing and 2007 hubs (not changed; not in the approved list). Kay Trophy year vs Frome Times dateline unresolved.
+
+## Overnight research (16 Oct 2026, Phase 1): open conflicts + Gazette hit
+Research only. No site HTML changed tonight. Working notes: `notes/overnight-2026-10-16.md` (untracked on the box).
+
+New / re-checked sources
+- [LG36] *The London Gazette*, 5 May 1936, issue 34281, p.2887 (naturalisation list): https://www.thegazette.co.uk/London/issue/34281/page/2887 — local PDF extract: `notes/gazette-34281-p2887-1936-05-05.pdf`
+- [SE15] Steve English forum ("The Place"), thread "Hub centre steering", post about Bristol Classic Show exhibit (search snippets; the page itself returns a JS challenge to the box): https://www.steveenglish.com/forum/viewtopic.php?t=53578
+- [RE24] lot 216 catalogue text re-read via search snippets (saleroom still blocks the box): guide £1,000–£2,000; hammer price still not shown publicly in the snippets seen tonight.
+
+### 1. First hub-steered sidecar: 1956 / 1958 / 1959? (⚠ still open; a third date appeared)
+- Unchanged from 15 Oct: [CM]/[BD] → 1956; [DW] "fifty years ago" / "another ten years" → ~1957–58; Henry Body via [CB15]/[MS15] → road-raced 1958.
+- **NEW [SE15]:** a Bristol show visitor wrote that "according to the history on the bike Difazio road raced it from **1959** and Henry bought it and then grass tracked it in the 60's". This is a secondary report of a show plate, not Body himself, and it conflicts with Body's "1958" in [CB15].
+- **[RE24] catalogue** (unchanged): Jack and Brian Sherwood raced "until **1959** when he stopped racing"; no build year; engine no. T110-D1586; guide £1,000–£2,000. **Hammer result still unknown** (saleroom page blocked; blank "Hammer Price" in snippets).
+- **Reading:** three "first" or racing start years are now in play (1956 build per Westlake; 1958 road race per Body; 1959 on a show plate / end of Jack's racing per Edmonds). Compatible story remains: built mid-1950s, raced late 1950s, sold when Richard started racing in 1959. Do **not** pick a single year for the hero without Tom / Tim / Richard.
+
+### 2. Numbers built / 1983 end date / survivors (no new primary count)
+- No independent register or new magazine count found tonight. The "~50" figure and survivor fractions still all trace to Westlake / Bonhams / Alto as of 15 Oct.
+- ⚠ Timeline line "Production winds down by 1983" remains contradicted by the 1985/87 Gold Wing hubs [CM] and the 2007 hub batch [MW]. Draft site wording only (overnight note Draft C); no HTML change.
+
+### 3. Pascal / naturalisation: **Gazette hit (birthplace still open)**
+- **[LG36]** lists: "Fazio, Pasquale Di; Italy; Cycle and Motor Engineer; 25, Catherine Street, Frome, Somerset. **30 March, 1936.**"
+- This independently confirms Italy → Frome, the Catherine Street address, and his trade. It does **not** state a birthplace or home town.
+- ⚠ Date nuance: TNA HO 334/141/7693 says certificate **AZ7693 issued 26 March 1936**; the Gazette naturalisation list gives **30 March 1936** (typical of Gazette list dates, which often record the oath / list date rather than the certificate issue day). Prefer "naturalised March 1936" or cite both.
+- Home Office case file **HO ref. F 2760** (likely HO 405) remains the path to the birthplace. Paid TNA order still required. No further Gazette naturalisation prose with a birthplace was found.
+
+### 4. Nickname "Jack" (still two Westlake versions; no third source)
+- Grace's Guide, iomtt.com competitor page, and Edmonds catalogue call him Jack without explaining the nickname. No third origin story found. Site neutral wording remains correct.
+
+### 5. Frome Times / Kay Engineering Trophy year (still unverified)
+- Live FT page still shows **"March 6, 2024"**; article text unchanged (Kevin Charles, Kay Engineering trophy, John Cooper, Westlake ~50 / 1968–1983 quote).
+- Stafford prize lists found for **2014** (Kay winner: Paul Turner's Ariel) do **not** cover Charles. The Classic Motorcycle Mechanics write-up of Stafford **October 2012** does not list Kay Engineering winners. No independent Stafford results page for Charles's win was found tonight. ⚠ Keep "2012" on the site only with a research flag until FT archive / Stafford results confirm it.
+
+### 6. Gaps checked, little new
+- Australia pair 1975 vs 1976: no new public source beyond Tim's two cybermotorcycle emails already logged.
+- R65 *Classic Bike* write-up: Boxerworks still alludes to magazine coverage; no issue/page identified tonight.
+- Tim Tucker public sources: still only [CM]/[CMM] emails. **Gmail (read-only):** Tom's 14 Oct 2026 email to tim.can15@gmail.com still has **no reply** (thread messageCount 1; `from:tim.can15@gmail.com` empty).
+- Newspaper archives: British Newspaper Archive still paywalled from the box.
+
+### Image candidates (16 Oct 2026)
+- Malc Wells Jack-at-bench photo: **already shipped** on main in 3d4097a — do not re-propose.
+- No new Creative Commons Difazio machine photos found tonight beyond those already logged (Janodet Trident CC BY-NC-SA 2.0; Colin Smith Catherine Street CC BY-SA 2.0; olly650 ND / unconfirmed).
