@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-15T04:40:00-04:00",
+  "updated": "2026-10-16T04:35:00-04:00",
   "purpose": "Draft machine registry for daytime review. NOT wired into live site rendering.",
   "live_site_note": "Live #models cards remain hand-written HTML. Do not switch to JSON render without CLS/lazy-srcset proof and Tom OK.",
   "count_on_site_cards": 12,
@@ -566,7 +566,7 @@
         "Phase 1 overnight note"
       ],
       "confidence": "medium",
-      "notes": "Do NOT add Malc Wells photos without Tom approval.",
+      "notes": "Do NOT add Malc Wells photos without Tom approval. Jack bench photo (flickr 4936995141) already live on main (3d4097a); other Malc machine shots still need Tom OK.",
       "photo_candidates": [
         "flickr 4936995141 Jack assembling hub — approval required"
       ]
@@ -575,7 +575,7 @@
       "id": "research-sidecar-outfit-first",
       "name": "BSA Gold Flash sidecar outfit (first hub-centre)",
       "approx_year": 1956,
-      "year_range": "1956–58",
+      "year_range": "1956–59",
       "kind": "sidecar",
       "on_site": false,
       "note_site": "Mentioned in timeline/hero; not a #models card",
@@ -594,17 +594,55 @@
         "CM",
         "Classic Bike Mar 2015 via archive.org",
         "Martin Squires blog",
-        "Phase 1 note"
+        "Phase 1 note",
+        "steveenglish forum t=53578 [SE15] (secondary plate report)",
+        "Phase 1 overnight 16 Oct"
       ],
       "confidence": "medium",
-      "notes": "⚠ 1956 vs 1958 still in conflict (built ~1956, road-raced 1958 is compatible)."
+      "notes": "⚠ 1956 / 1958 / 1959 still in conflict. Westlake/CM + Bonhams: 1956 appearance. Henry Body (Classic Bike Mar 2015 / Martin Squires): road-raced 1958, first hub-centre outfit. Secondary [SE15] Bristol show plate (2015 visitor report): plate said Difazio road-raced it from 1959, then Henry grass-tracked in the 1960s — conflicts with Body's 1958. Compatible reading (medium confidence): mid-1950s build, late-1950s racing; low confidence for any single year as *the* first. Edmonds lot 216 (May 2024): raced until 1959; hammer unknown from box.",
+      "date_tension": {
+        "1956": [
+          "CM (Westlake)",
+          "Bonhams lot 386"
+        ],
+        "1958": [
+          "Henry Body via Classic Bike Mar 2015",
+          "Martin Squires blog"
+        ],
+        "1959": [
+          "steveenglish Bristol plate report [SE15] — secondary; Edmonds 'until 1959' is end of Jack's racing, not build year"
+        ]
+      }
     }
   ],
   "fields_todo": [
     "Confirm public regs beyond EYB 999J and OXB 75P",
-    "Resolve 1956/1958 first-outfit wording with Tim/Richard",
+    "Resolve 1956/1958/1959 first-outfit wording with Tim/Richard (third date = SE15 Bristol plate)",
     "Attribute Bonhams “only two complete” if restated",
     "Photo permissions for Bonhams/CBH/forum images",
-    "ADVrider full thread when readable in a real browser"
-  ]
+    "ADVrider full thread when readable in a real browser",
+    "Confirm Edmonds lot 216 hammer when saleroom readable",
+    "Pascal birthplace via HO 405 F 2760 (paid TNA)"
+  ],
+  "phase1_16oct_delta": {
+    "note": "Incremental notes from overnight Phase 1 (16 Oct). NOT wired into live rendering. Do not invent facts.",
+    "items": [
+      "First BSA Gold Flash outfit: third date tension — steveenglish Bristol plate reported 'from 1959' [SE15]; still open with 1956 (Westlake/CM) and 1958 (Body).",
+      "Pascal naturalisation: London Gazette 5 May 1936 issue 34281 p.2887 confirms Italy, Cycle and Motor Engineer, 25 Catherine Street, Frome; list date 30 Mar 1936 (vs TNA issue 26 Mar). Birthplace still needs HO 405 F 2760.",
+      "Edmonds lot 216 hammer still unknown (saleroom/CloudFront blocks the box)."
+    ]
+  },
+  "people_notes_draft": {
+    "pascal_difazio_naturalisation": {
+      "updated": "2026-10-16",
+      "status": "research_only",
+      "summary": "London Gazette 5 May 1936, issue 34281 p.2887: Fazio, Pasquale Di; Italy; Cycle and Motor Engineer; 25, Catherine Street, Frome, Somerset. 30 March, 1936.",
+      "sources": [
+        "LG36",
+        "TNA HO 334/141/7693",
+        "FreeBMD death 1973 DoB 21 Apr 1889"
+      ],
+      "open": "Birthplace / home town still needs paid TNA HO 405 F 2760; FSYB 'Michael St Angelo, near Casino' unverified."
+    }
+  }
 }

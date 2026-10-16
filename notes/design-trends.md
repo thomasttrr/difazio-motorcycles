@@ -67,3 +67,52 @@ Gaps peers highlight that we still have:
 
 ## Phase 2 implementation note
 Safe polish landed on `main` with SW cache bump `difazio-v13` → `difazio-v14`. Larger visual experiments go only on `design/2026-10-15-*` preview branches.
+
+---
+
+# Design trends delta — Fri 16 Oct 2026 (~4:25 AM ET, Phase 2)
+**Context:** Same Difazio look (warm graphite `#2b2d31` + brass `#e2ad5b`, Fraunces + Inter). Card placeholders already live on main. `design/glass-depth` remains a separate large preview (not merged).
+
+## Sources checked tonight
+### Articles / case notes (new or re-checked)
+- [Envato Elements — Web design trends 2026](https://elements.envato.com/learn/web-design-trends) — mature glassmorphism as hierarchy (not decoration); purposeful micro-interactions; reject decorative motion.
+- [Tubik — 7 UI trends 2026](https://tubikstudio.com/blog/ui-design-trends-2026/) — “purposeful motion”; **anti-Liquid Glass** when blur fights legibility; craft over spectacle.
+- [Rajesh R Nair — UI trends 2026 (shipping vs portfolio)](https://rajeshrnair.com/blog/design/ui-ux/ui-design-trends-2026-bento-grids-glassmorphism.html) — restrained glass for sticky chrome / short labels only; avoid on dense text; `backdrop-filter` cost on mid-range phones.
+- [The Plus Addons — Web design trends 2026](https://theplusaddons.com/blog/web-design-trends-2026/) — glass sticky headers as durable pattern; restraint as the durable “trend”.
+- [PRSD — Museum web design (May 2026)](https://www.theprsd.co.uk/2026/05/07/great-museum-websites/) — re-checked: digital front door, storytelling journeys, a11y-from-start, mobile-first clarity, SEO for collections.
+- [Museable — Connecting collections, content, audiences](https://museable.com/museum-website-collections-content-audiences/) — visitors land on deep pages; connect object → story → related records (fits our #models ↔ timeline ↔ sources intent).
+- [Daniel Macedo — Designing art experience (Cleveland MoA)](https://danielmacedo.com.br/bside/designing-art-experience) — interface steps back when the artwork enters; system language for accessibility; rhythm per content type.
+- Automotive / marque heritage: [Palate automotive refs](https://palatemcp.com/gallery/vertical/automotive) (Gunther Werks bronze-on-graphite, Alfaholics-as-museum, Amos full-bleed); [Type SB / Corelo](https://corelo.co.uk/work/type-sb) (near-black + bronze, collection index as plates in a book); [Norton redesign notes](https://www.onething.design/projects/norton) (heritage storytelling + clean IA — conversion-heavy, so take storytelling only); Harley CR38 concept (editorial treatment of machines, not SKUs).
+
+### Refero MCP
+- **Still unavailable:** `NO_SUBSCRIPTION` / expired (`https://refero.design/mcp/upgrade`). No live screen board tonight. Same retry list as 15 Oct: museum collection grids, editorial dark heritage, motorcycle marque archives.
+
+### Exa MCP
+- Not relied on tonight (prior 429s); WebSearch / WebFetch used instead.
+
+## Delta vs 15 Oct — what still fits Difazio
+| Pattern | 15 Oct take | 16 Oct delta |
+|---|---|---|
+| Serif + quiet sans | Keep Fraunces + Inter | Unchanged. Type SB / museum catalogues reinforce display serif for “plates”, Inter for chrome. |
+| Warm graphite + single brass accent | Protect | Unchanged. Gunther / Type SB bronze-on-near-black still the closest auto peers. |
+| Glass / frosted depth | Optional preview (`design/glass-depth`) | 2026 consensus: glass OK for **chrome / short labels**, bad for long copy; anti-Liquid Glass if blur hurts contrast. **Do not merge glass-depth blindly**; if revisiting, narrow to sticky nav / caption chips, not full panels over body text. |
+| Purposeful motion | Prefer-reduced-motion already calm | Stronger industry signal: motion must explain. Keep card lift / lightbox zoom; no kinetic type, no scroll-hijack, no decorative loops. |
+| Collection cards as curatorial objects | Placeholders shipped; hover lift live | **New fit:** museum wall-label / curatorial caption on **fine-pointer hover only** (overlay year · name on image). Mobile stays clean (no overlay on coarse pointer). Preview branch tonight. |
+| Object ↔ story linking | Partial (timeline + cards + sources) | Museable reinforces connecting machine cards to timeline/sources; no structural change overnight — note for Tom. |
+| Bento / broken grids / maximalism | Reject | Still reject for this archive. |
+| More WebGL / 3D | Hub explainer only | Unchanged — measure FPS before adding. |
+
+## Concrete actions from this pass
+### Shipped (or shipping) to main — small, non-factual
+- Mobile/desktop `.cards` grid gap **18 → 20px** (15 Oct leftover; breathing room around placeholders).
+- SW cache bump **difazio-v16 → difazio-v17** with that CSS touch.
+
+### Preview only (needs Tom OK)
+- **`design/2026-10-16-curatorial-captions`:** museum-style caption overlay on `#models` card media (fine pointer + keyboard focus-within). Reuses existing year/name facts; no new copy claims. Mobile/coarse: overlay hidden.
+- Existing **`design/glass-depth`:** leave alone; latest branch alias still deploying as `https://difazio-motorcycles-git-design-332f8f-thomas-projects-4bf17056.vercel.app` (SSO protection may apply).
+
+### Still do not chase
+- Font swaps, second accent, hero redesign, React migration, scroll-hijacking, AI chat, collage/maximalism, merging glass-depth without a narrowed brief.
+
+## Phase 2 implementation note (16 Oct)
+Safe spacing polish on `main` with SW `difazio-v17`. Curatorial caption experiment only on `design/2026-10-16-curatorial-captions`.
