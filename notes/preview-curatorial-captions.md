@@ -28,3 +28,10 @@ Difazio already has year · type tags and titles below the image. This preview a
 
 ## Review ask
 Approve if the overlay feels museum-quiet and readable on brass/graphite; reject or ask for softer gradient / smaller type if it feels salesy or busy over placeholders.
+
+## Preview URLs (16 Oct ~4:28 AM ET)
+- Branch alias (SSO): https://difazio-motorcycles-git-design-66d599-thomas-projects-4bf17056.vercel.app
+- Deployment: https://difazio-motorcycles-8ptuueu6w-thomas-projects-4bf17056.vercel.app
+- **No-login share** (expires ~17 Oct 2026 7:28 AM per Vercel): https://difazio-motorcycles-git-design-66d599-thomas-projects-4bf17056.vercel.app/?_vercel_share=odwuy6C4JACqgzPMEibFEsYhpuQQM5CJ
+- Commit: `23a6571`
+
