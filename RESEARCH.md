@@ -162,7 +162,7 @@ Every fact below comes with its source. Items marked ⚠ are single-source or co
   - "oldmalc" turned hubs in the mid-70s, and around 2007 made new hubs with Jack (93) and John Ransome.
 - Peter Holden bought the Laverda 3C from Andy Lloyd "about 20 years back" and also owns a 1926 Ner-a-Car: https://laverdaforum.com/threads/hub-centre-steering-who%E2%80%99s-ridden-a-one.103377/
 - Richard (2011), on the R65 specials: "over the last twenty five or so years, I have made several short stroke special R65's, mostly 94m/m bore 850cc ... 88m/m bore which makes a very useful short stroke 750cc": https://boxerworks.com/forum/viewtopic.php?t=1821
-- Not used: the 1958 vs 1956 sidecar date (the site keeps 1956), and OddBike's "Tesi based on Difazio hub" (single secondary source).
+- Not used at the time: the 1958 vs 1956 sidecar date (superseded 16 Oct 2026: the site now cites 1956, 1958 and 1959), and OddBike's "Tesi based on Difazio hub" (single secondary source).
 
 ## Overnight research (15 Oct 2026, Phase 1): the five flagged conflicts
 Research only. Nothing on the site was changed. Full working notes: /workspace/notes/overnight-2026-10-15.md (on the box).
@@ -269,3 +269,10 @@ New / re-checked sources
 ### Image candidates (16 Oct 2026)
 - Malc Wells Jack-at-bench photo: **already shipped** on main in 3d4097a — do not re-propose.
 - No new Creative Commons Difazio machine photos found tonight beyond those already logged (Janodet Trident CC BY-NC-SA 2.0; Colin Smith Catherine Street CC BY-SA 2.0; olly650 ND / unconfirmed).
+
+## Site changes applied 16 Oct 2026 (approved by Tom)
+- Merged `design/2026-10-16-curatorial-captions` (hover museum captions on #models, fine pointers only).
+- **First outfit:** hub paragraph now gives all three dates with attribution: 1956 per Westlake [CM]; 1958 road-racing per Henry Body [CB15]; 1959 per a Bristol show plate reported in 2015 [SE15]. Hero stat and timeline changed from "1956" to "1956–59"; the racing paragraph and "Car parts" fact no longer state 1956 as fact.
+- **Production end:** hub paragraph uses overnight Draft C (~50 per [DW]/[FT]; Gold Wing 1985/1987 per [CM]; 2007 hubs per [MW]; ~half survive per [FT], no register). Timeline "1980s" no longer says production winds down by 1983.
+- **Kay Trophy:** year dropped from the Hurricane card; the trophy removed from the 2012 timeline entry (FT dateline unverified, see 15/16 Oct notes).
+- SW cache bumped to difazio-v18. CREDITS.md unchanged (no new images or sources).

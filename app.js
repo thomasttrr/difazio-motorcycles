@@ -3,17 +3,17 @@ const T=[["1914","Pascal Difazio is selling bicycles from a cottage on Catherine
 ["1920s","Brough Superior agent by 1923, and the first BSA dealer in Somerset. Jack recalled meeting T. E. Lawrence."],
 ["c.1930","Jack starts grass-track racing at 16 on a BSA Blue Star, later moving to a Rudge Ulster."],
 ["1947","Jack leaves Pinks in London to take over the business as Pascal retires."],
-["1956","First hub-centre machine: a BSA Gold Flash sidecar outfit with a Reliant-type swinging arm and a Ford Prefect brake drum."],
+["1956–59","First hub-centre machine: a BSA Gold Flash sidecar outfit with a Reliant-type swinging arm and a Ford Prefect brake drum. Sources date it 1956, 1958 or 1959."],
 ["1957–59","Richard joins the shop and passengers for Jack on the grass. His first road race is at Silverstone in April 1959."],
 ["1962–65","The shop becomes agents for Honda (1962), Suzuki (1963) and Yamaha (1965)."],
 ["1968","Patent GB1274441 is filed. Richard races the first solo hub-steerer, an AJS 7R special, at Thruxton."],
 ["1969","A hub-steered Triumph Trident road bike appears on Frome’s streets."],
 ["1973–76","Highlights: a Suzuki GT550 for Bike, a Norton Commando, Mead & Tomkinson’s Laverda racer, the Ducati 750 and three Hurricanes."],
-["1980s","Production winds down by 1983 and the shop turns to BMW twins."],
+["1980s","Accounts often close the story in 1983, but conversions continue: a Honda Gold Wing is hub-steered in 1985, and the shop turns to BMW twins."],
 ["Early 1990s","The workshops face redevelopment, and John Ransome saves the moulds and spares."],
 ["c.2007","Aged 93, Jack helps make a new batch of hubs. Richard builds the last of his five R65 Difazio Specials."],
 ["2008","Richard closes the shop at No. 25 after nearly 90 years there."],
-["2012","A Hurricane-engined Difazio wins the Kay Engineering Trophy at Stafford. Jack Difazio dies the same year."]];
+["2012","Jack Difazio dies."]];
 const nav=document.querySelector('.tl-nav'),card=document.querySelector('.tl-card');
 T.forEach(([y],i)=>{const b=document.createElement('button');b.type='button';b.textContent=y;b.setAttribute('role','tab');b.onclick=()=>show(i,true);nav.append(b)});
 function show(i,focus){[...nav.children].forEach((b,j)=>{const on=i==j;b.classList.toggle('on',on);b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;if(on){if(focus)b.focus({preventScroll:true});nav.scrollTo({left:b.offsetLeft-nav.clientWidth/2+b.clientWidth/2,behavior:'smooth'})}});card.innerHTML=`<b>${T[i][0]}</b><p>${T[i][1]}</p>`;cur=i}
